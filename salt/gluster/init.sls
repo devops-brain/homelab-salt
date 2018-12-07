@@ -7,11 +7,15 @@ glusterfs-service:
     - enable: True
 
 ## TODO:  figure out the dependencies
-glusterfs_badblocks_log:
-  file.exists:
-    - name: /var/log/badblocks.log
+#glusterfs_badblocks_log:
+#  file.exists:
+#    - name: /var/log/badblocks.log
 
 parted:
+  pkg:
+    - installed
+
+util-linux:
   pkg:
     - installed
 
@@ -43,7 +47,6 @@ glusterfs_partition:
 #    - fstype: ext4
 
 # TODO:  move volume list into pillar:  jenkins TARDIS legacy masters_Donna_Collection masters_Dragons_Den masters_Koi_Pond masters_Roger_Roger masters_Rose_Garden plex_Donna_Collection plex_Dragons_Den plex_Koi_Pond plex_Roger_Roger plex_Rose_Garden plex_Optimized_Versions plex_PlayOn plex_HDHomeRun plex_backups
-#
 #{% for volume in salt['pillar.get']('gluster:volumes', 'jenkins') %}
 #gluster_volume_{{ volume }}
 #  glusterfs.volume_present:
@@ -55,3 +58,5 @@ glusterfs_partition:
 #    - replica: 3
 #    - start: True
 #{% endfor %}
+
+
