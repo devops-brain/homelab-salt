@@ -10,7 +10,7 @@ debug:
   glusterfs.peered:
     - names:
       {% for instance in range(6) %}
-      - odroid-hc2-{{ '%02d' % instance }}
+      - odroid-hc2-{{ '%02d' % (instance+1) }}
       {% endfor %}
 
 # TODO:  move volume list into pillar:  jenkins TARDIS legacy masters plexmedia
@@ -20,7 +20,7 @@ gluster_volume_{{ volume }}:
     - name: {{ volume }}
     - bricks:
         {% for instance in range(6) %}
-        - odroid-hc2-{{ '%02d' % instance }}:/mnt/sda1/{{volume}}
+        - odroid-hc2-{{ '%02d' % (instance+1) }}:/mnt/sda1/{{volume}}
         {% endfor %}
     - replica: 3
     - start: True
