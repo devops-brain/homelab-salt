@@ -1,7 +1,9 @@
 
 
 
-
+glusterfs-client:
+  pkg:
+    - installed
 
 {% set glusterfs_host_list = ['odroid-hc2-01', 'odroid-hc2-02', 'odroid-hc2-03', 'odroid-hc2-04', 'odroid-hc2-05', 'odroid-hc2-06'] %}
 
