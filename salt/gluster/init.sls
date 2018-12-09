@@ -8,7 +8,7 @@ glusterfs-service:
 
 debug:
   glusterfs.peered:
-    -names:
+    - names:
       {% for instance in range(6) %}
       - odroid-hc2-{{ '%02d' % instance }}
       {% endfor %}
