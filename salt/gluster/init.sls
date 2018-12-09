@@ -12,7 +12,7 @@ glusterfs-service:
 
 # TODO:  move volume list into pillar:  jenkins TARDIS legacy masters plexmedia
 {% for volume in salt['pillar.get']('gluster:volumes', ['jenkins', 'legacy', 'masters']) %}
-gluster_volume_{{ volume }}
+gluster_volume_{{ volume }}:
   glusterfs.volume_present:
     - name: {{ volume }}
     - bricks:
