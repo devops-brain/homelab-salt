@@ -14,7 +14,7 @@ debug:
       {% endfor %}
 
 # TODO:  move volume list into pillar:  jenkins TARDIS legacy masters plexmedia
-{% for volume in salt['pillar.get']('gluster:volumes', ['jenkins', 'legacy', 'masters']) %}
+{% for volume in salt['pillar.get']('gluster:volumes', ['jenkins', 'TARDIS', 'legacy', 'masters', 'plexmedia']) %}
 gluster_volume_{{ volume }}:
   glusterfs.volume_present:
     - name: {{ volume }}
@@ -26,4 +26,4 @@ gluster_volume_{{ volume }}:
     - start: True
 {% endfor %}
 
-
+# TODO:  add dispersed volume support, instead of default triple redundency raid10

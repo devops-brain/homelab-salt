@@ -29,6 +29,7 @@ parted:
 #    - device: /dev/sda1
 #    - fs_type: ext4
 
+# mount manually added to /etc/fstab, this should track removal to allow dependency creation...
 /mnt/sda1:
   mount.mounted:
     - device: /dev/sda1
