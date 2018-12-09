@@ -6,9 +6,10 @@ glusterfs-service:
     - name: glusterd
     - enable: True
   glusterfs.peered:
-    {% for instance in range(6) %}
-    - odroid-hc2-{{ '%02d' % instance }}
-    {% endfor %}
+    -names:
+      {% for instance in range(6) %}
+      - odroid-hc2-{{ '%02d' % instance }}
+      {% endfor %}
 
 # TODO:  move volume list into pillar:  jenkins TARDIS legacy masters plexmedia
 {% for volume in salt['pillar.get']('gluster:volumes', ['jenkins', 'legacy', 'masters']) %}
