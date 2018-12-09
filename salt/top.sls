@@ -6,6 +6,10 @@ base:
     - gluster.hosts
     - gluster.client
     - docker
+  'nuc5cpyh-01':
+    - gluster.hosts
+    - gluster.client
+    - docker
   'odroid-hc2-*':
     - gluster.hosts
     - gluster.disks
