@@ -5,8 +5,6 @@ glusterfs-service:
   service.running:
     - name: glusterd
     - enable: True
-
-debug:
   glusterfs.peered:
     - names:
       {% for instance in range(6) %}
