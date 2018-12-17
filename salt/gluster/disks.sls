@@ -33,7 +33,7 @@ parted:
 /mnt/sda1:
   mount.mounted:
     - device: /dev/sda1
-    - fstype: ext4
+    - fstype: xfs
     - mkmnt: True
     - persist: True
 
