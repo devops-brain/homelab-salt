@@ -30,7 +30,7 @@ gluster_volume_{{ volume }}:
   glusterfs.volume_present:
     - name: {{ volume }}
     - bricks:
-        {% for instance in range(3) %}
+        {% for instance in range(4) %}
         - odroid-hc2-{{ '%02d' % (instance+1) }}:/mnt/sda1/{{volume}}
         {% endfor %}
     - start: True
