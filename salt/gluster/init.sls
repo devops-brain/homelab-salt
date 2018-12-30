@@ -17,20 +17,20 @@ gluster_volume_{{ volume }}:
   glusterfs.volume_present:
     - name: {{ volume }}
     - bricks:
-        {% for instance in range(3) %}
+        {% for instance in range(6) %}
         - odroid-hc2-{{ '%02d' % (instance+1) }}:/mnt/sda1/{{volume}}
         {% endfor %}
     - replica: 3
     - start: True
 {% endfor %}
 
-# TODO:  add dispersed volume support, instead of default triple redundancy raid10
-{% for volume in salt['pillar.get']('gluster:volumes', ['TARDIS', 'plexmedia']) %}
+# TODO:  add dispersed volume support, instead of default triple redundancy raid10 or distributed
+{% for volume in salt['pillar.get']('gluster:volumes', ['TARDIS', 'plexmedia', 'steambrain', 'steamminikitty']) %}
 gluster_volume_{{ volume }}:
   glusterfs.volume_present:
     - name: {{ volume }}
     - bricks:
-        {% for instance in range(4) %}
+        {% for instance in range(6) %}
         - odroid-hc2-{{ '%02d' % (instance+1) }}:/mnt/sda1/{{volume}}
         {% endfor %}
     - start: True
