@@ -7,7 +7,7 @@ glusterfs-service:
     - enable: True
   glusterfs.peered:
     - names:
-      {% for instance in range(6) %}
+      {% for instance in range(9) %}
       - odroid-hc2-{{ '%02d' % (instance+1) }}
       {% endfor %}
 
@@ -17,7 +17,7 @@ gluster_volume_{{ volume }}:
   glusterfs.volume_present:
     - name: {{ volume }}
     - bricks:
-        {% for instance in range(6) %}
+        {% for instance in range(9) %}
         - odroid-hc2-{{ '%02d' % (instance+1) }}:/mnt/sda1/{{volume}}
         {% endfor %}
     - replica: 3
