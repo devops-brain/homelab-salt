@@ -10,6 +10,7 @@ base:
     - gluster.hosts
     - gluster.client
     - docker
+    - desktop
   'odroid-hc2-*':
     - gluster.hosts
     - gluster.disks
