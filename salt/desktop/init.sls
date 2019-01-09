@@ -1,0 +1,4 @@
+ubuntu-desktop:
+  pkg:
+    - installed
+
