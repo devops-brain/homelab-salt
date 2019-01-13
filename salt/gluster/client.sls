@@ -9,7 +9,7 @@ glusterfs-client:
   pkg:
     - installed
 
-{% for volume in volume_redundancy_list) %}
+{% for volume in volume_redundancy_list %}
 /mnt/glusterfs/{{ volume }}:
   mount.mounted:
     - name: /mnt/glusterfs/{{ volume }}
@@ -24,7 +24,7 @@ glusterfs-client:
       - ({{ glusterfs_host_list|join('|') }}):/{{ volume }}
 {% endfor %}
 
-{% for volume in volume_parity_list) %}
+{% for volume in volume_parity_list %}
 /mnt/glusterfs/{{ volume }}:
   mount.mounted:
     - name: /mnt/glusterfs/{{ volume }}

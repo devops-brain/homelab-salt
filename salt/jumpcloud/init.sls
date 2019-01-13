@@ -14,10 +14,10 @@ disable_root:
   cmd.run:
     - name: "sudo usermod -p '!' root"
 
-disable_ssh_as_root:
-  cmd.run
-    - name: "sed s/PermitRootLogin yes/PermitRootLogin no/"
-    - unless: grep "PermitRootLogin no" /etc/ssh/sshd_config
+#disable_ssh_as_root:
+#  cmd.run
+#    - name: 'sed s/PermitRootLogin yes/PermitRootLogin no/'
+#    - unless: grep "PermitRootLogin no" /etc/ssh/sshd_config
 {% endif %}
 
 # add host to jumpcloud if not so
