@@ -1,6 +1,7 @@
 base:
   '*':
     - saltstack
+    - jumpcloud
   'Zotac-mini-01':
     - saltstack.master
     - gluster.hosts

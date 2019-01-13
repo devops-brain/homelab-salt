@@ -1,3 +1,9 @@
+#!jinja|yaml
+
+{% set hostname = salt['grains.get']('id') %}
+{% set glusterfs_host_list = salt['pillar.get']('gluster:hosts', ['odroid-hc2-01', 'odroid-hc2-02', 'odroid-hc2-03', 'odroid-hc2-04', 'odroid-hc2-05', 'odroid-hc2-06', 'odroid-hc2-07', 'odroid-hc2-08', 'odroid-hc2-09']) %}
+
+
 glusterfs-service:
   pkg:
     - name: glusterfs-server
@@ -7,32 +13,38 @@ glusterfs-service:
     - enable: True
   glusterfs.peered:
     - names:
-      {% for instance in range(9) %}
-      - odroid-hc2-{{ '%02d' % (instance+1) }}
+      {% for host in glusterfs_host_list %}
+      {% if host != hostname %}
+      - {{host}}
+      {% endif %}
       {% endfor %}
 
-# TODO:  move volume list into pillar:  jenkins TARDIS legacy masters plexmedia
-{% for volume in salt['pillar.get']('gluster:volumes', ['jenkins', 'legacy', 'masters', 'steambrain', 'steamminikitty']) %}
+{% for volume in salt['pillar.get']('gluster:volumes_redundancy', ['jenkins', 'legacy', 'masters']) %}
 gluster_volume_{{ volume }}:
   glusterfs.volume_present:
     - name: {{ volume }}
     - bricks:
-        {% for instance in range(9) %}
-        - odroid-hc2-{{ '%02d' % (instance+1) }}:/mnt/sda1/{{volume}}
+        {% for host in glusterfs_host_list %}
+        - {{host}}:/mnt/sda1/{{volume}}
         {% endfor %}
     - replica: 3
     - start: True
 {% endfor %}
 
-# TODO:  add dispersed volume support, instead of default triple redundancy raid10 or distributed
-#{% for volume in salt['pillar.get']('gluster:volumes', ['TARDIS', 'plexmedia']) %}
+# TODO:  add dispersed volume support, instead of default triple redundancy raid10 or distributed (enable when added)
+#{% for volume in salt['pillar.get']('gluster:volumes_parity', ['TARDIS', 'plexmedia']) %}
 #gluster_volume_{{ volume }}:
 #  glusterfs.volume_present:
 #    - name: {{ volume }}
 #    - bricks:
+#        {% for host in glusterfs_host_list %}
+#        - {{host}}:/mnt/sda1/{{volume}}
+#        {% endfor %}
 #        {% for instance in range(6) %}
 #        - odroid-hc2-{{ '%02d' % (instance+1) }}:/mnt/sda1/{{volume}}
 #        {% endfor %}
+#    - replica: 6
+#    - parity: 2
 #    - start: True
 #{% endfor %}
 

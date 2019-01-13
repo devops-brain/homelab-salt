@@ -1,5 +1,9 @@
+#!jinja|yaml
+
+{% set hostname = salt['grains.get']('id') %}
 
 
+## TODO:  make list dynamic, use salt['dnsutil.A'](hostname)[0]
 /etc/hosts:
   file.managed:
     - create: True
@@ -21,4 +25,7 @@
         192.168.7.193   odroid-hc2-07
         192.168.7.192   odroid-hc2-08
         192.168.7.191   odroid-hc2-09
+        192.168.7.190   odroid-hc2-10
+        192.168.7.189   odroid-hc2-11
+        192.168.7.188   odroid-hc2-12
 

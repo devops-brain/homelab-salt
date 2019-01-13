@@ -36,5 +36,7 @@ parted:
     - fstype: xfs
     - mkmnt: True
     - persist: True
+    - dump: 0
+    - pass_num: 0
 
 
