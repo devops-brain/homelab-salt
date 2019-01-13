@@ -1,7 +1,7 @@
 #!jinja|yaml
 
 {% set hostname = salt['grains.get']('id') %}
-{% set glusterfs_host_list = salt['pillar.get']('gluster:hosts', ['odroid-hc2-01', 'odroid-hc2-02', 'odroid-hc2-03', 'odroid-hc2-04', 'odroid-hc2-05', 'odroid-hc2-06', 'odroid-hc2-07', 'odroid-hc2-08', 'odroid-hc2-09']) %}
+{% set glusterfs_host_list = salt['pillar.get']('gluster:hosts', ['odroid-hc2-01', 'odroid-hc2-02', 'odroid-hc2-03']) %}
 
 
 glusterfs-service:
