@@ -9,5 +9,5 @@ salt-minion:
     - create: True
     - makedirs: True
     - contents: |
-        master: 192.168.7.69
+        master: {{salt['pillar.get']('salt:minion:master', '192.168.7.69')}}
 

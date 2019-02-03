@@ -1,7 +1,7 @@
 #!jinja|yaml
 
-{% set glusterfs_host_list = salt['pillar.get']('gluster:hosts', ['odroid-hc2-01', 'odroid-hc2-02', 'odroid-hc2-03', 'odroid-hc2-04', 'odroid-hc2-05', 'odroid-hc2-06']) %}
-{% set volume_redundancy_list = salt['pillar.get']('gluster:volumes_redundancy', ['jenkins', 'legacy', 'masters', 'steambrain', 'steamminikitty']) %}
+{% set glusterfs_host_list = salt['pillar.get']('gluster:hosts', ['odroid-hc2-01', 'odroid-hc2-02', 'odroid-hc2-03']) %}
+{% set volume_redundancy_list = salt['pillar.get']('gluster:volumes_redundancy', ['jenkins', 'legacy', 'masters']) %}
 {% set volume_parity_list = salt['pillar.get']('gluster:volumes_parity', ['TARDIS', 'plexmedia']) %}
 
 

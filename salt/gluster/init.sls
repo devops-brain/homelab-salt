@@ -31,7 +31,7 @@ gluster_volume_{{ volume }}:
     - start: True
 {% endfor %}
 
-# TODO:  add dispersed volume support, instead of default triple redundancy raid10 or distributed (enable when added)
+## TODO:  add dispersed volume support, instead of default triple redundancy raid10 or distributed (enable when added)
 #{% for volume in salt['pillar.get']('gluster:volumes_parity', ['TARDIS', 'plexmedia']) %}
 #gluster_volume_{{ volume }}:
 #  glusterfs.volume_present:

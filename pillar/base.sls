@@ -11,8 +11,6 @@ gluster:
     - 'jenkins'
     - 'legacy'
     - 'masters'
-    - 'steambrain'
-    - 'steamminikitty'
   volumes_parity:
     - 'TARDIS'
     - 'plexmedia'
@@ -20,3 +18,7 @@ gluster:
 # user accounts are not automatically added, so if you use my key I'll own a machine in your network with no risk to me.
 jumpcloud:
   xConnectKey: 4b362188eb128d1757e1592a0ba43b4cc852e1db
+
+salt:
+  minion:
+    master: '192.168.7.69'
