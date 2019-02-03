@@ -7,7 +7,7 @@ base:
     - gluster.hosts
     - gluster.client
     - docker
-  'nuc5cpyh-01':
+  'nuc5*':
     - gluster.hosts
     - gluster.client
     - docker
