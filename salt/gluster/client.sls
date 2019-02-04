@@ -13,7 +13,7 @@ glusterfs-client:
 /mnt/glusterfs/{{ volume }}:
   mount.mounted:
     - name: /mnt/glusterfs/{{ volume }}
-    - device: {{ glusterfs_host_list|join(',') }}:/{{ volume }}
+    - device: {{ glusterfs_host_list[0] }},{{ glusterfs_host_list[1] }},{{ glusterfs_host_list[2] }}:/{{ volume }}
     - fstype: glusterfs
     - opts: _netdev,rw,defaults,direct-io-mode=disable
     - mkmnt: True
@@ -28,7 +28,7 @@ glusterfs-client:
 /mnt/glusterfs/{{ volume }}:
   mount.mounted:
     - name: /mnt/glusterfs/{{ volume }}
-    - device: {{ glusterfs_host_list|join(',') }}:/{{ volume }}
+    - device: {{ glusterfs_host_list[0] }},{{ glusterfs_host_list[1] }},{{ glusterfs_host_list[2] }}:/{{ volume }}
     - fstype: glusterfs
     - opts: _netdev,rw,defaults,direct-io-mode=disable
     - mkmnt: True
