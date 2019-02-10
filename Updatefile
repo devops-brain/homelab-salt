@@ -10,7 +10,7 @@ pipeline {
         sh 'apt update'
         sh 'apt dist-upgrade -y'
       }
-    },
+    }
     stage('Update all hosts'){
       steps {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
