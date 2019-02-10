@@ -9,7 +9,7 @@ pipeline {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         sh 'cd /srv; git checkout .; git pull'
       }
-    },
+    }
     stage('Push code via highstate'){
       steps {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
