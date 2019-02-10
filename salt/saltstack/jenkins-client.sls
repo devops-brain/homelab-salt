@@ -5,6 +5,8 @@
 
 # setup jenkins agent on saltmaster
 jenkins-installer
+  pkg.installed:
+    - name: openjdk-11-jre-headless
   file.directory:
     - name: /var/jenkins
     - user: root
