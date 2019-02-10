@@ -1,0 +1,22 @@
+pipeline {
+  agent {
+    label "saltmaster"
+  }
+
+  stages {
+    stage('update locally to ensure salt is not restarted by update during a highstate'){
+      steps {
+        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+        sh 'apt update'
+        sh 'apt dist-upgrade -y'
+      }
+    },
+    stage('Update all hosts'){
+      steps {
+        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+        sh "salt '*' cmd.run 'apt update'"
+        sh "salt '*' cmd.run 'apt dist-upgrade -y'"
+      }
+    }
+  }
+}
