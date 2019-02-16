@@ -9,3 +9,7 @@ salt-master:
   service.running:
     - enable: True
 
+gpg-dependency-packages:
+  pkg.installed:
+    - python-gnupg
+    - rng-tools
