@@ -4,17 +4,18 @@ base:
     - jumpcloud
   'Zotac-mini-01':
     - saltstack.master
-    - saltstack.jenkins-client
+#    - saltstack.jenkins-client
     - gluster.hosts
     - gluster.client
     - docker
     - docker.jenkins
-    - docker.jnlp
+#    - docker.jnlp
+    - docker.plex
   'nuc5*':
     - gluster.hosts
     - gluster.client
     - docker
-    - docker.jnlp
+#    - docker.jnlp
   'odroid-hc2-*':
     - gluster.hosts
     - gluster.disks
