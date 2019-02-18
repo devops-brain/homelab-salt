@@ -4,7 +4,7 @@ base:
     - jumpcloud
   'nuc5ppyh-01':
     - saltstack.master
-#    - saltstack.jenkins-client
+    - saltstack.jenkins-client
     - gluster.hosts
     - gluster.client
     - docker
