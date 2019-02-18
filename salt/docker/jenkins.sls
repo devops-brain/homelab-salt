@@ -8,7 +8,6 @@ jenkins:
       - /mnt/glusterfs/jenkins:/var/jenkins_home:rw
     - image: 'khoyi/jenkins:latest'
     - detach: True
-    - hostname: 'jenkins'
     - network_mode: "host"
 
 
