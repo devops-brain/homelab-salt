@@ -8,7 +8,7 @@ base:
     - gluster.hosts
     - gluster.client
     - docker
-#    - docker.jenkins
+    - docker.jenkins
 #    - docker.jnlp
 #    - docker.plex
   'nuc5cpyh-01':
