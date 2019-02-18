@@ -24,7 +24,7 @@ jenkins-installer:
     - watch_in:
       - service: jenkins-agent.service
 
-jenkins-slave.service:
+jenkins-agent.service:
   file.managed:
     - name: /etc/systemd/system/jenkins-agent.service
     - user: root
