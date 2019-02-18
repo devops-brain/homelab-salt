@@ -25,26 +25,3 @@ docker:
       =5+jU
       -----END PGP MESSAGE-----
 
-# bare metal agent to manage salt.  Could this work in a container?
-jenkins:
-  jnlp:
-    secret: |
-      -----BEGIN PGP MESSAGE-----
-
-      hQIMA8GuL1Ms8Af5AQ//Z5v6WpY21O3w18gzjfeVnxAXl/OIkaf7Jty8CGfsbN6H
-      bDYXVI/sqKpdOcpm+IMc1kBpsGERWyINdFxaNaAl6wWHFNrBwxo/cE/rtBPdYLDl
-      WI1k6mZ3BJ8P+OqS0yE6XlUZkHNjk7ehDhu0fQ8k4Ca2Ce3KzTmFDnf5mA7lDBNo
-      qhM0prrrTX7nRvwC9QOwv8Xl5h0yHLD4Xbgd4Q98dciwxKLh3L06+tnfKHoTALOI
-      WA3xkERMxZFAIvMQ9jF1yFQypB5kLIIvOA6vPmhL7yUgzIIHU42QDp0+dUUfrvsx
-      h+tlOrsvfj+VsUi9B0jejppPKHX6QLLI87Vo8jdq6WizxHtT9HGmk3J0lRAHUfSK
-      2oIF38cuHYBOBfOkWXK2zP5nu8q2h8ZshVZ9tf4T2k/TB+InjzgPQfauMbpQb84F
-      NPOfPqa1seZk48wibZWpfYoCpg51HbxNdkM27cGrKfaG3bDuA6QFiAxRpyuu+lIo
-      T6Gn9d0kwr63xtftQ+2PEPXse70MEgyG3eNEmQR84hW5I4OpSWY2g6ggBmXVU+AJ
-      xuSClPL+kEnV4pgR8XmaF36I3zvt0etd13sX+1k2QoqtWy801OFTbzYcV1BQE88Z
-      nzGAnoYRLRsBVrRf/2mHRbqRV75HmcTzMrCHhuk7TuBYaEpbFE+DjiN3UMfER3LS
-      cwGjk/Dn0VL+1LvI4DrDcMag0ZqZ5MGBlvibSTGKS+y8S1NqrYX/7M/IAj8J5GdG
-      9ZeElpIp8TLKmL0LwVIr5KWqkub6h/M4ZpHtE62uOGT/KeCHzithX53bUyC8GkkI
-      hJ0xxqtD6KUlaC6jLhErumUmFiU=
-      =Exgf
-      -----END PGP MESSAGE-----
-

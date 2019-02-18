@@ -22,22 +22,19 @@ gluster:
 jumpcloud:
   xConnectKey: |
     -----BEGIN PGP MESSAGE-----
-
-    hQIMA8GuL1Ms8Af5AQ/+KIPzCfZntOgAwDrNMqwPERqiPEhoAJZQH3OCLrxizsSV
-    NbzljsqhLHp/77YatiGL6ml7omjwTTq3JJRNKt43bvi4jt0XCcUmMW5ZQqwtXtFO
-    hnKz9CRjFu8/Etdk9uwRxKAskIDibrEBh1c/dTokATszYr5gxlxjAAfg53uhrn1S
-    ehc8N5B5TUPGQtECHWmw/ctpgTjSB/hqYdu1GvrfNcgImlaakaJtQ8WJgNXnLG/L
-    D2LaIMxlcX0Q9JD9eKc3JY2hgv3ODCwBGH9r44iU3Li7/thZrx5b6sZO20iNkxGz
-    YR3K05D5Um5Q235tTjJe7PZ1jIBPdxyOsEHxa/Qi4CWnmg1V+1HotgtPK9VcjaeD
-    xmEJs2O7vfquipIOo1d5gEkQ2aZIVuttvInweWeae1sSOU3mi6H19i31CKL816s1
-    qNE0ycVK+asl9dnTlNKNvMPMNNt9SORyNbqtHE3s2mEk3ugQXSxsFhBZN3edV9w4
-    gX4nhtngy9192edUVpyCUJIRtVusSa/Q4yw09lSMcgtmOJMYG6BWJ5GEvwrw+5La
-    CaKMu+6mYYyxLtPfVFz89UG+tp2BgeZlEM9Qp4XZ/6nKjEBmL6S3C/4wJ/Ww6ecw
-    LSTtqUEBujL7I8stAIR0feaZ9EpgOcHgXAEID5YjMSU4WBQCBOIfjViob0ZG/LTS
-    YwEoiW/aSeUfSYSx7aMjJuu1m195CsDNCOS4stugFqY5ML4v3XNr5k0Cf8+dvLsL
-    eDqvb1jm0n2DRd636s6nwMphMqJ5RS5sclsMMDdOfUp63l7mwatg9zMWxOFotqo4
-    33++hQ==
-    =OIik
+    
+    hQGMA3gT58un8irNAQv7BIKOptYQwvoHsNeG05M0yK+d/DKVPBnajmjwJWXUxleL
+    6lNU1EhucGr2ZQ3NEdeNdfZ4V9L+S9JZzBlqq4gVJJ9Jp2c5hii3l1QAQADZ5TBU
+    yXvz/CxF5dEtC/RmVUm6CVV6IyqxEZ5U7zpfW3/5Ea05ZGIw/nNCqHZ+6bK6OiqR
+    BRkKCIopEQwBBrnf8oKNXqXS4HgST405ISHVzjm0rOYm07WlubseEZwH3x60qWQl
+    4y2QbxQuhbvvBUb7YqjQ0nyYJoTXmZ4w/TtfRjDh/MKmaM1QOrEeOLVsp5F8dcGA
+    r1iEmQJccDr2a/ZCyVmdyGrnkrydJofCHb+sWz0megMo/ZMEOTx0FvvAFwBYSE3A
+    0nxIeCyOfzgXGW6FFhMVB+FArrc3oLfwS8bkPmVgSHSqIOXqO4Cbf1Kw5jZb0A72
+    w3wR5Xn09fHpRl+nqROWGo+kCfqCJT4FaqeuyGrL7Fael6Qvd/5W0JqkVCO3inst
+    xWpxKniSL+nW2nBrY+nS0mMB1F6LgdvVefI4Lc5pLj3BdhECzzcmpdbaYS4r3twm
+    XAEWmUkUCCvNkbkyrBQeJ2TX2SGPU9gEHIZ8e+ez6QQ/2cN8AwoOMFnyVgbsx3kK
+    QL3tFSxVEQkvVY/ABM5WQdz97WI=
+    =/Ewr
     -----END PGP MESSAGE-----
 
 salt:

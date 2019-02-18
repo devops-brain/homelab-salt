@@ -24,3 +24,8 @@ docker:
       iibHdg5rDt8A/0Ns9BTurhinYQ==
       =tkuw
       -----END PGP MESSAGE-----
+
+# bare metal agent to manage salt.  Could this work in a container?
+jenkins:
+  jnlp:
+    secret: ""

@@ -21,6 +21,7 @@ jenkins-installer:
     - user: root
     - group: root
     - mode: '0755'
+    - skip_verify: True
     - watch_in:
       - service: jenkins-agent.service
 
@@ -31,7 +32,7 @@ jenkins-agent.service:
     - group: root
     - contents: |
         [Unit]
-        Description=jenkins-slave
+        Description=jenkins-agent
         After=network.target auditd.service
 
         [Service]
@@ -45,7 +46,7 @@ jenkins-agent.service:
 
         [Install]
         WantedBy=multi-user.target
-        Alais=jenkins-slave.service
+        Alais=jenkins-agent.service
   service.running:
     - enable: True
 
