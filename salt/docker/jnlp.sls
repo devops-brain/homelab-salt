@@ -8,8 +8,7 @@ jnlp:
     - binds:
       - /mnt/glusterfs/masters:/srv/masters:ro
       - /mnt/glusterfs/plexmedia:/srv/plexmedia:rw
-    - image: khoyi/jnlp-slave:latest
-    - auto_remove: True
+    - image: 'khoyi/jnlp-slave:latest'
     - detach: True
     - entrypoint:
       - -url
@@ -17,6 +16,5 @@ jnlp:
       - -workDir=/home/jenkins/agent
       - {{salt['pillar.get']('docker:jnlp:secret', '')}}
       - {{hostname}}-docker
-    - hostname: {{hostname}}-docker
-    - restart_policy: always
+    - network_mode: "host"
 
