@@ -14,8 +14,9 @@
         ::1		localhost ip6-localhost ip6-loopback
         ff02::1		ip6-allnodes
         ff02::2		ip6-allrouters
-        192.168.7.69    Zotac-mini-01
+        192.168.7.69    nuc5ppyh-01
         192.168.7.68    nuc5cpyh-01
+        192.168.7.67    Zotac-mini-01
         192.168.7.199   odroid-hc2-01
         192.168.7.198   odroid-hc2-02
         192.168.7.197   odroid-hc2-03

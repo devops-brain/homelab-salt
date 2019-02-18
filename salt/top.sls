@@ -2,7 +2,7 @@ base:
   '*':
     - saltstack
     - jumpcloud
-  'Zotac-mini-01':
+  'nuc5ppyh-01':
     - saltstack.master
 #    - saltstack.jenkins-client
     - gluster.hosts
@@ -11,7 +11,12 @@ base:
     - docker.jenkins
 #    - docker.jnlp
     - docker.plex
-  'nuc5*':
+  'nuc5cpyh-01':
+    - gluster.hosts
+    - gluster.client
+    - docker
+#    - docker.jnlp
+  'Zotac-mini-01':
     - gluster.hosts
     - gluster.client
     - docker

@@ -5,7 +5,7 @@
 jenkins:
   docker_container.running:
     - binds:
-      - /mnt/glusterfs/jenkins:/var/jenkins_home
+      - /mnt/glusterfs/jenkins:/var/jenkins_home:rw
     - image: khoyi/jenkins:latest
     - auto_remove: True
     - detach: True

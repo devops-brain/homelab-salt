@@ -8,7 +8,7 @@
 # This is a bootstrap shortcut that is only safe in a one user env...   do NOT copy this approach on production setups!
 gluster:
   hosts:
-    {% for instance in range(9) %}
+    {% for instance in range(12) %}
     - odroid-hc2-{{ '%02d' % (instance+1) }}
     {% endfor %}
   volumes_redundancy:
