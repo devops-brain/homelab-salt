@@ -6,15 +6,13 @@ jenkins:
   docker_container.running:
     - binds:
       - /mnt/glusterfs/jenkins:/var/jenkins_home:rw
-    - image: khoyi/jenkins:latest
-    - auto_remove: True
+    - image: 'khoyi/jenkins:latest'
     - detach: True
-    - hostname: jenkins
+    - hostname: 'jenkins'
     - ports:
       - 8080
       - 50000
     - publish_all_ports: True
-    - restart_policy: always
 
 
 
