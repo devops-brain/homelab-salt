@@ -7,7 +7,7 @@ jnlp:
   docker_container.running:
     - binds:
       - /mnt/glusterfs/masters:/srv/masters:ro
-      - /mnt/glusterfs/plexmedia:/srv/plexmedia
+      - /mnt/glusterfs/plexmedia:/srv/plexmedia:rw
     - image: khoyi/jnlp-slave:latest
     - auto_remove: True
     - detach: True

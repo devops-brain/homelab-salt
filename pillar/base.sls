@@ -22,7 +22,7 @@ gluster:
 jumpcloud:
   xConnectKey: |
     -----BEGIN PGP MESSAGE-----
-    
+
     hQGMA3gT58un8irNAQv7BIKOptYQwvoHsNeG05M0yK+d/DKVPBnajmjwJWXUxleL
     6lNU1EhucGr2ZQ3NEdeNdfZ4V9L+S9JZzBlqq4gVJJ9Jp2c5hii3l1QAQADZ5TBU
     yXvz/CxF5dEtC/RmVUm6CVV6IyqxEZ5U7zpfW3/5Ea05ZGIw/nNCqHZ+6bK6OiqR
