@@ -4,15 +4,17 @@
 
 
 # setup jenkins agent on saltmaster
-jenkins-installer:
-  pkg.installed:
-    - name: openjdk-11-jre-headless
+jenkins-workdir:
   file.directory:
     - name: /var/jenkins
     - user: root
     - group: root
     - mode: '0777'
     - makedirs: True
+
+jenkins-installer:
+  pkg.installed:
+    - name: openjdk-11-jre-headless
   file.managed:
     - name: /usr/local/bin/agent.jar
     - source: {{salt['pillar.get']('jenkins:master_url')}}/jnlpJars/agent.jar
