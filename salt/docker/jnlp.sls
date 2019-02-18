@@ -10,11 +10,6 @@ jnlp:
       - /mnt/glusterfs/plexmedia:/srv/plexmedia:rw
     - image: 'khoyi/jnlp-slave:latest'
     - detach: True
-    - entrypoint:
-      - -url
-      - {{salt['pillar.get']('jenkins:master_url', 'http://192.168.7.69:8080')}}
-      - -workDir=/home/jenkins/agent
-      - {{salt['pillar.get']('docker:jnlp:secret', '')}}
-      - {{hostname}}-docker
+    - entrypoint: "-url {{salt['pillar.get']('jenkins:master_url', 'http://192.168.7.69:8080')}} -workDir=/home/jenkins/agent {{salt['pillar.get']('docker:jnlp:secret', '')}} {{hostname}}-docker"
     - network_mode: "host"
 
