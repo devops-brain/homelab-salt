@@ -11,6 +11,6 @@ salt-master:
 
 gpg-dependency-packages:
   pkg.installed:
-    - pkgs
+    - pkgs:
       - python-gnupg
       - rng-tools
