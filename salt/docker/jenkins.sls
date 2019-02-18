@@ -9,10 +9,7 @@ jenkins:
     - image: 'khoyi/jenkins:latest'
     - detach: True
     - hostname: 'jenkins'
-    - ports:
-      - 8080
-      - 50000
-    - publish_all_ports: True
+    - network_mode: "host"
 
 
 
