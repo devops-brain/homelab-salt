@@ -42,7 +42,7 @@ jenkins-agent.service:
         User=root
         Group=root
         ExecStatPre=sleep 10m
-        ExecStart=java -jar /usr/local/bin/agent.jar -jnlpUrl {{salt['pillar.get']('jenkins:master_url')}}/computer/{{hostname}}/slave-agent.jnlp -secret {{salt['pillar.get']('docker:jnlp:secret', '')}} -workDir "/var/jenkins"
+        ExecStart=java -jar /usr/local/bin/agent.jar -jnlpUrl {{salt['pillar.get']('jenkins:master_url')}}/computer/{{hostname}}/slave-agent.jnlp -secret {{salt['pillar.get']('jenkins:jnlp:secret', '')}} -workDir "/var/jenkins"
 
         [Install]
         WantedBy=multi-user.target
