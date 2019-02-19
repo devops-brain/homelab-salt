@@ -10,6 +10,7 @@ base:
     - docker
     - docker.jenkins
     - docker.jnlp
+    - docker.samba
   'nuc5cpyh-01':
     - gluster.hosts
     - gluster.client

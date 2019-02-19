@@ -43,3 +43,21 @@ salt:
 
 jenkins:
   master_url: 'http://192.168.7.69:8080'
+
+samba:
+  password: |
+    -----BEGIN PGP MESSAGE-----
+
+    hQGMA3gT58un8irNAQv8DzQ7VoxWQkjhjWlaLRfBS4he7eVLvHbN3CqfTl8aRpaN
+    OJRTnnZWIam4XhS4MZkjnHLQlZfs5PD0Cn8GNSetIGThVtSVWLrIL0ioI1tWDJNo
+    8P6nDbc2jlSKZCjBHeUwl8zWbR6U8IqPYtBFUsd4fhrpO2ibJ2lKB+3bp8GJ270s
+    Tr7DPrmVpy4hgzt383BA9PmL7/eRXfjNZ3+fWgOby54XL2CoVCTZlw+xdSBadByj
+    W1+vabHpHT+W+gHPSgejbJxNlWmv5L/ypxG4dIUuwIhWXl6y+V9+QJCSg9iKnE2d
+    cQthKMUz9pcZJgNbgG7cMlszlMgJSEC7BnRAkqTDNOR8++I18xJl5wEMz0q0TJUa
+    sACrPIn77Lw3GDg0Tds96J8+b8AhBraDh2Y7CpCFfRnDXTgPvyg42pePEDLTlreI
+    o7ACLVKSLBeAUyPBmHWZRxWLqBbpjk3cIpEL3kfedqUUFJ+FLp+YTJP+9ANndht4
+    VKf2kl9UvZOj/x+sEMQS0kgBxoqpF6zLVV7/n8HFfS5nHXr4zmfTi7xPET2VQeTW
+    1AtRqgKdQ56OuuCSiSiKhKoMmWwP4aD8iJ1GanqzTc+okODqT73OmEY=
+    =6cjs
+    -----END PGP MESSAGE-----
+
