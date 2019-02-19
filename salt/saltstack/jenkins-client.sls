@@ -12,9 +12,13 @@ jenkins-workdir:
     - mode: '0777'
     - makedirs: True
 
+purge_problematic_java
+  pkg.purged:
+    - name: openjdk-11-jre-headless
+
 jenkins-installer:
   pkg.installed:
-    - name: openjdk-11-jre-headless
+    - name: openjdk-8-jre-headless
   file.managed:
     - name: /usr/local/bin/agent.jar
     - source: {{salt['pillar.get']('jenkins:master_url')}}/jnlpJars/agent.jar
