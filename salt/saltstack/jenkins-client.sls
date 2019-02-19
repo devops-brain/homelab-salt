@@ -12,7 +12,7 @@ jenkins-workdir:
     - mode: '0777'
     - makedirs: True
 
-purge_problematic_java
+purge_problematic_java:
   pkg.purged:
     - name: openjdk-11-jre-headless
 
