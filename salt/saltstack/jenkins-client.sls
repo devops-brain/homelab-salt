@@ -47,7 +47,7 @@ jenkins-agent.service:
         [Install]
         WantedBy=multi-user.target
         Alais=jenkins-agent.service
-  service.running:
-    - enable: True
+#  service.running:
+#    - enable: True
 
 
