@@ -18,9 +18,9 @@ base:
     - docker
 #    - docker.jnlp
   'Zotac-mini-01':
-    - gluster.hosts
-    - gluster.client
-    - docker
+#    - gluster.hosts
+#    - gluster.client
+#    - docker
 #    - docker.jnlp
   'odroid-hc2-*':
     - gluster.hosts
