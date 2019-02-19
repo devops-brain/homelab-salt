@@ -9,12 +9,9 @@ plex:
       - /tmp/plex:/transcode:rw
       - /mnt/glusterfs/plexmedia:/data:rw
     - image: plexinc/pms-docker:plexpass
-    - auto_remove: True
     - detach: True
     - hostname: BadWolf2.devops-brain.net
-    - dommainname: devops-brain.net
     - network_mode: "host"
-    - restart_policy: always
 
 
 #sudo docker run -d \
