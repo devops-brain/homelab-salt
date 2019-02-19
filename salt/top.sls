@@ -9,8 +9,8 @@ base:
     - gluster.client
     - docker
     - docker.jenkins
-    - docker.jnlp
-    - docker.samba
+#    - docker.jnlp
+#    - docker.samba
     - docker.plex
   'nuc5cpyh-01':
     - gluster.hosts
