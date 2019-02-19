@@ -7,13 +7,13 @@ pipeline {
     stage('pull latest code to saltmaster'){
       steps {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-        sh 'cd /srv; git checkout .; git pull'
+        sh 'cd /srv; git checkout master; git checkout .; git pull'
       }
     }
     stage('Push code via highstate'){
       steps {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-        sh "salt 'Zotac-mini-01' state.highstate"
+        sh "salt 'nuc5ppyh-01' state.highstate"
         sh "salt 'odroid-hc2-01' state.highstate"
         sh "salt '*' state.highstate"
       }
