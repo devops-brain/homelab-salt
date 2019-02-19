@@ -10,7 +10,6 @@ plex:
       - /mnt/glusterfs/plexmedia:/data:rw
     - image: plexinc/pms-docker:plexpass
     - detach: True
-    - hostname: BadWolf2.devops-brain.net
     - network_mode: "host"
 
 
