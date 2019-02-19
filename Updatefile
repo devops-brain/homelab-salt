@@ -4,7 +4,7 @@ pipeline {
   }
 
   stages {
-    stage('update locally to ensure salt is not restarted by update during a highstate'){
+    stage('update locally to ensure salt-master is updated first (alwasy update saltmaster first)'){
       steps {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         sh 'apt update'
