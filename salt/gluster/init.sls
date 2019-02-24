@@ -32,19 +32,14 @@ gluster_volume_{{ volume }}:
 {% endfor %}
 
 ## TODO:  add dispersed volume support, instead of default triple redundancy raid10 or distributed (enable when added)
-#{% for volume in salt['pillar.get']('gluster:volumes_parity', ['TARDIS', 'plexmedia']) %}
-#gluster_volume_{{ volume }}:
-#  glusterfs.volume_present:
-#    - name: {{ volume }}
-#    - bricks:
-#        {% for host in glusterfs_host_list %}
-#        - {{host}}:/mnt/sda1/{{volume}}
-#        {% endfor %}
-#        {% for instance in range(6) %}
-#        - odroid-hc2-{{ '%02d' % (instance+1) }}:/mnt/sda1/{{volume}}
-#        {% endfor %}
-#    - replica: 6
-#    - parity: 2
-#    - start: True
-#{% endfor %}
+{% for volume in salt['pillar.get']('gluster:volumes_distributed', ['TARDIS', 'plexmedia']) %}
+gluster_volume_{{ volume }}:
+  glusterfs.volume_present:
+    - name: {{ volume }}
+    - bricks:
+        {% for host in glusterfs_host_list %}
+        - {{host}}:/mnt/sda1/{{volume}}
+        {% endfor %}
+    - start: True
+{% endfor %}
 

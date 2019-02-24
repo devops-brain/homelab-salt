@@ -14,10 +14,27 @@ gluster:
   volumes_redundancy:
     - 'jenkins'
     - 'legacy'
-    - 'masters'
-  volumes_parity:
+    - 'masters_DVR'
+    - 'masters_Koi-Pond'
+    - 'masters_Rose-Garden'
+    - 'masters_Dragons-Den'
+    - 'masters_Donna-Collection'
+    - 'masters_Roger-Roger'
+    - 'plex-backups'
+  volumes_distributed:
+    - 'plexmedia_DVR_TV'
+    - 'plexmedia_DVR_Movies'
+    - 'plexmedia_Koi-Pond_TV'
+    - 'plexmedia_Koi-Pond_Movies'
+    - 'plexmedia_Rose-Garden_TV'
+    - 'plexmedia_Rose-Garden_Movies'
+    - 'plexmedia_Dragons-Den_TV'
+    - 'plexmedia_Dragons-Den_Movies'
+    - 'plexmedia_Donna-Collection_TV'
+    - 'plexmedia_Donna-Collection_Movies'
+    - 'plexmedia_Roger-Roger_TV'
+    - 'plexmedia_Roger-Roger_Movies'
     - 'TARDIS'
-    - 'plexmedia'
 
 jumpcloud:
   xConnectKey: |
