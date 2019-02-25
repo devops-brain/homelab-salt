@@ -6,7 +6,7 @@ base:
     - saltstack.master
 #    - saltstack.jenkins-client
     - gluster.hosts
-#    - gluster.client
+    - gluster.client
     - docker
     - docker.jenkins
 #    - docker.jnlp
@@ -14,7 +14,7 @@ base:
     - docker.plex
   'nuc5cpyh-01':
     - gluster.hosts
-#    - gluster.client
+    - gluster.client
     - docker
 #    - docker.jnlp
 #    - docker.samba
@@ -27,5 +27,5 @@ base:
   'odroid-hc2-*':
     - gluster.hosts
     - gluster.disks
-#    - gluster
+    - gluster
 
