@@ -25,7 +25,7 @@ gluster_volume_{{ volume }}:
     - name: {{ volume }}
     - bricks:
         {% for host in glusterfs_host_list %}
-        - {{host}}:/mnt/sda1/{{volume}}
+        - {{host}}:/mnt/gluster_cow/{{volume}}
         {% endfor %}
     - replica: 3
     - start: True
@@ -38,7 +38,7 @@ gluster_volume_{{ volume }}:
     - name: {{ volume }}
     - bricks:
         {% for host in glusterfs_host_list %}
-        - {{host}}:/mnt/sda1/{{volume}}
+        - {{host}}:/mnt/gluster_cow/{{volume}}
         {% endfor %}
     - start: True
 {% endfor %}
