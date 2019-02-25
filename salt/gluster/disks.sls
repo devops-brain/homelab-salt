@@ -24,9 +24,24 @@ btrfs-tools:
 #    - device: /dev/sda
 #    - noforce: True
 
-## TODO:  Create subvolume for glusterfs
-##cmd.run to create subvolume is it is not detected by another command
-##Then mount the subvolume inplace for gluster
+# create subvolume if mounting it fails ('cause it doesn't exist)
+make_subvol:
+  cmd.run:
+    - name: "btrfs create /mnt/btrfs/@gluster"
+    - onfail:
+      - mount: /mnt/gluster_cow
+
+# Mount the subvolume inplace for gluster
+/mnt/gluster_cow:
+  mount.mounted:
+    - device: /dev/sda
+    - fstype: btrfs
+    - mkmnt: True
+    - persist: True
+    - dump: 0
+    - pass_num: 0
+    - opts: "compress=zlib,subvol=@gluster"
+
 
 ## TODO:  create scrub and balance processes
 ## TODO:  consider snapshots
