@@ -15,7 +15,7 @@ btrfs-tools:
     - persist: True
     - dump: 0
     - pass_num: 0
-    - opts: "compress=zstd:3"
+    - opts: "compress=zlib"
 
 ## Disabled as it is just too dangerous and not critical at my current scale.
 #glusterfs_base_fs:
