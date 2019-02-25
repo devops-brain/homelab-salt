@@ -27,7 +27,7 @@ btrfs-tools:
 # create subvolume if mounting it fails ('cause it doesn't exist)
 make_subvol:
   cmd.run:
-    - name: "btrfs create /mnt/btrfs/@gluster"
+    - name: "btrfs subvolume create /mnt/btrfs/@gluster"
     - onfail:
       - mount: /mnt/gluster_cow
 
