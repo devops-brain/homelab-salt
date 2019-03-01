@@ -11,7 +11,11 @@ samba:
       - /mnt/glusterfs:/mnt/glusterfs:rw
     - image: 'dperson/samba:latest'
     - detach: True
-    - cmd: '''-u "malkav;{{salt['pillar.get']('samba:password','Change-me2d!')}};1001;1001" -s "glusterfs;/mnt/glusterfs;yes;no;no;malkav;malkav"'''
+    - cmd:
+      - '-u'
+      - "malkav;{{salt['pillar.get']('samba:password','Change-me2d!')}};1001;1001"
+      - '-s'
+      - "glusterfs;/mnt/glusterfs;yes;no;no;malkav;malkav"
     - network_mode: "host"
 
 

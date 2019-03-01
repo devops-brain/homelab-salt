@@ -18,11 +18,11 @@ base:
     - docker
     - docker.jnlp
     - docker.samba
-  'Zotac-mini-01':
-    - gluster.hosts
-    - gluster.client
-    - docker
-    - docker.jnlp
+#  'Zotac-mini-01':
+#    - gluster.hosts
+#    - gluster.client
+#    - docker
+#    - docker.jnlp
 #    - docker.samba
   'odroid-hc2-*':
     - gluster.hosts
