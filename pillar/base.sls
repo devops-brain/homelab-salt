@@ -14,6 +14,7 @@ gluster:
   volumes_redundancy:
     - 'jenkins'
     - 'legacy'
+    - 'google-domains-ddns'
     - 'masters_DVR'
     - 'masters_Koi-Pond'
     - 'masters_Rose-Garden'
