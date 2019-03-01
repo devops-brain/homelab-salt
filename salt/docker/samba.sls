@@ -8,10 +8,10 @@ samba:
   docker_container.running:
     - binds:
     ## TODO:  clean up gluster share structure
-      - /mnt/glusterfs:/mnt/plexmedia:rw
+      - /mnt/glusterfs:/mnt/glusterfs:rw
     - image: 'dperson/samba:latest'
     - detach: True
-    - entrypoint: '''-u "malkav;{{salt['pillar.get']('samba:password', 'Change-me2d!')}};1001;1001" -s "glusterfs;/mnt/plexmedia;yes;no;no;malkav;malkav"'''
+    - entrypoint: '''samba.sh -u "malkav;{{salt['pillar.get']('samba:password', 'Change-me2d!')}};1001;1001" -s "glusterfs;/mnt/glusterfs;yes;no;no;malkav;malkav"'''
     - network_mode: "host"
 
 

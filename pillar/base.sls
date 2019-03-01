@@ -65,16 +65,16 @@ samba:
   password: |
     -----BEGIN PGP MESSAGE-----
 
-    hQGMA3gT58un8irNAQv8DzQ7VoxWQkjhjWlaLRfBS4he7eVLvHbN3CqfTl8aRpaN
-    OJRTnnZWIam4XhS4MZkjnHLQlZfs5PD0Cn8GNSetIGThVtSVWLrIL0ioI1tWDJNo
-    8P6nDbc2jlSKZCjBHeUwl8zWbR6U8IqPYtBFUsd4fhrpO2ibJ2lKB+3bp8GJ270s
-    Tr7DPrmVpy4hgzt383BA9PmL7/eRXfjNZ3+fWgOby54XL2CoVCTZlw+xdSBadByj
-    W1+vabHpHT+W+gHPSgejbJxNlWmv5L/ypxG4dIUuwIhWXl6y+V9+QJCSg9iKnE2d
-    cQthKMUz9pcZJgNbgG7cMlszlMgJSEC7BnRAkqTDNOR8++I18xJl5wEMz0q0TJUa
-    sACrPIn77Lw3GDg0Tds96J8+b8AhBraDh2Y7CpCFfRnDXTgPvyg42pePEDLTlreI
-    o7ACLVKSLBeAUyPBmHWZRxWLqBbpjk3cIpEL3kfedqUUFJ+FLp+YTJP+9ANndht4
-    VKf2kl9UvZOj/x+sEMQS0kgBxoqpF6zLVV7/n8HFfS5nHXr4zmfTi7xPET2VQeTW
-    1AtRqgKdQ56OuuCSiSiKhKoMmWwP4aD8iJ1GanqzTc+okODqT73OmEY=
-    =6cjs
+    hQGMA3gT58un8irNAQv+MiYb4UOr1c0ZuGBmi2DCgsHTGeGeQCi3sImKmBpptaln
+    T+sR094GYZCxjwhJWvkhjS6FgS7kDCpNDjTVePRHKh+kuTwnvOP+4npC9EcCbyw9
+    bh9XKtFvejYd7KMmjxrB8hZTMBUWZtcaeiE/qH7LqQWfI6G9QnNqKKvO4Clu274L
+    GtsXLFIEeCBsrJs0l4liQhSfS+4XJJ23tSLW9x5yZZ2oeZQl17PQrdrApAzOZdgK
+    Kkw3jMqPQZL9OxyZIeX7LyJCaBkr1k0uo0CRZIixyuSHXNM6LJZZ+tsaB9mTYKkh
+    5uXf2rynSxIgzl/BCrc5biP83gkMncbnUKUBQrGx49342cDzoKPfGhySA+AzYdWA
+    gfxxgqwhxA9TGqTUSxwjgmGgbXzUnu/e1cyWOw/K076vqBYtGVBfAE6pDScRiG3H
+    nbrgubQcQpuh45nB1QaXSVs8HNSeszTp08KpNfkTW61YXb/bRaI2kn8ksKALIHCT
+    vyNTxho+Dw9zAPzBzMv80kkBH8uqFsKSBuUrcdX65oxxhXB1+n510WV8rwkxABz/
+    UfAyozvDcKq0/nmqltrdoTxyOExVPIp/5L2WbfsVN4QJuQU7Q698iw5+
+    =JvYs
     -----END PGP MESSAGE-----
 

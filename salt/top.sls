@@ -10,14 +10,14 @@ base:
     - docker
     - docker.jenkins
     - docker.jnlp
-#    - docker.samba
+    - docker.samba
     - docker.plex
   'nuc5cpyh-01':
     - gluster.hosts
     - gluster.client
     - docker
     - docker.jnlp
-#    - docker.samba
+    - docker.samba
 #  'Zotac-mini-01':
 #    - gluster.hosts
 #    - gluster.client
