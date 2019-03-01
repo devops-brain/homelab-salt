@@ -7,17 +7,18 @@ plex:
     - binds:
       - /var/lib/plexdb:/config:rw
       - /tmp/plex:/transcode:rw
-      - /mnt/glusterfs/plexmedia_DVR_TV:/data/DVR/TV:rw
-      - /mnt/glusterfs/plexmedia_DVR_Movies:/data/DVR/Movies:rw
-      - /mnt/glusterfs/plexmedia_Koi-Pond_TV:/data/Koi-Pond/TV:rw
-      - /mnt/glusterfs/plexmedia_Koi-Pond_Movies:/data/Koi-Pond/Movies:rw
-      - /mnt/glusterfs/plexmedia_Rose-Garden_TV:/data/Rose-Garden/TV:rw
-      - /mnt/glusterfs/plexmedia_Rose-Garden_Movies:/data/Rose-Garden/Movies:rw
-      - /mnt/glusterfs/plexmedia_Dragons-Den_TV:/data/Dragons-Den/TV:rw
-      - /mnt/glusterfs/plexmedia_Dragons-Den_Movies:/data/Dragons-Den/Movies:rw
-      - /mnt/glusterfs/plexmedia_Donna-Collection_TV:/data/Donna-Collection/TV:rw
-      - /mnt/glusterfs/plexmedia_Donna-Collection_Movies:/data/Donna-Collection/Movies:rw
-      - /mnt/glusterfs/plexmedia_Roger-Roger_Movies:/data/Roger-Roger/Movies:rw
+      - /mnt/glusterfs/plexmedia_DVR_TV:/data/DVR_TV:rw
+      - /mnt/glusterfs/plexmedia_DVR_Movies:/data/DVR_Movies:rw
+      - /mnt/glusterfs/plexmedia_Koi-Pond_TV:/data/Koi-Pond_TV:rw
+      - /mnt/glusterfs/plexmedia_Koi-Pond_Movies:/data/Koi-Pond_Movies:rw
+      - /mnt/glusterfs/plexmedia_Rose-Garden_TV:/data/Rose-Garden_TV:rw
+      - /mnt/glusterfs/plexmedia_Rose-Garden_Movies:/data/Rose-Garden_Movies:rw
+      - /mnt/glusterfs/plexmedia_Dragons-Den_TV:/data/Dragons-Den_TV:rw
+      - /mnt/glusterfs/plexmedia_Dragons-Den_Movies:/data/Dragons-Den_Movies:rw
+      - /mnt/glusterfs/plexmedia_Donna-Collection_TV:/data/Donna-Collection_TV:rw
+      - /mnt/glusterfs/plexmedia_Donna-Collection_Movies:/data/Donna-Collection_Movies:rw
+      - /mnt/glusterfs/plexmedia_Roger-Roger_Movies:/data/Roger-Roger_TV:rw
+      - /mnt/glusterfs/plexmedia_Roger-Roger_Movies:/data/Roger-Roger_Movies:rw
       - /mnt/glusterfs/plex-backups:/data/backups:rw
     - image: plexinc/pms-docker:plexpass
     - detach: True
