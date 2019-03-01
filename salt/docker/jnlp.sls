@@ -8,10 +8,10 @@ jnlp:
     - binds:
       - /mnt/glusterfs/masters_DVR:/srv/masters/DVR:ro
       - /mnt/glusterfs/masters_Koi-Pond:/srv/masters_Koi-Pond:ro
-      - /mnt/glusterfs/Rose-Garden:/srv/Rose-Garden:ro
-      - /mnt/glusterfs/Dragons-Den:/srv/Dragons-Den:ro
-      - /mnt/glusterfs/Donna-Collection:/srv/Donna-Collection:ro
-      - /mnt/glusterfs/Roger-Roger:/srv/Roger-Roger:ro
+      - /mnt/glusterfs/masters_Rose-Garden:/srv/masters_Rose-Garden:ro
+      - /mnt/glusterfs/masters_Dragons-Den:/srv/masters_Dragons-Den:ro
+      - /mnt/glusterfs/masters_Donna-Collection:/srv/masters_Donna-Collection:ro
+      - /mnt/glusterfs/masters_Roger-Roger:/srv/masters_Roger-Roger:ro
       - /mnt/glusterfs/plexmedia_DVR_TV:/srv/plexmedia_DVR_TV:rw
       - /mnt/glusterfs/plexmedia_DVR_Movies:/srv/plexmedia_DVR_Movies:rw
       - /mnt/glusterfs/plexmedia_Koi-Pond_TV:/srv/plexmedia_Koi-Pond_TV:rw
