@@ -6,7 +6,7 @@
 jnlp:
   docker_container.running:
     - binds:
-      - /mnt/glusterfs/masters_DVR:/srv/masters/DVR:ro
+      - /mnt/glusterfs/masters_DVR:/srv/masters_DVR:ro
       - /mnt/glusterfs/masters_Koi-Pond:/srv/masters_Koi-Pond:ro
       - /mnt/glusterfs/masters_Rose-Garden:/srv/masters_Rose-Garden:ro
       - /mnt/glusterfs/masters_Dragons-Den:/srv/masters_Dragons-Den:ro
