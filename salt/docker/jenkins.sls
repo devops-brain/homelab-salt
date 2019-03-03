@@ -2,7 +2,7 @@
 
 
 
-/var/glusterfs/jenkins:
+/mnt/glusterfs/jenkins:
   file.directory:
     - makedirs: True
     - user: 1000
