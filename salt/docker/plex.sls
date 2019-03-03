@@ -3,8 +3,9 @@
 
 
 # enfore share perms
-/mnt/glusterfs/plexmedia_symlinks:
+/mnt/glusterfs/plexmedia_symlinks-perms:
   file.directory:
+    - name: /mnt/glusterfs/plexmedia_symlinks
     - makedirs: True
     - user: 10000
     - group: 10000

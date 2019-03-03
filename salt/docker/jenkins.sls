@@ -2,8 +2,9 @@
 
 
 
-/mnt/glusterfs/jenkins:
+/mnt/glusterfs/jenkins-perms:
   file.directory:
+    - name: /mnt/glusterfs/jenkins
     - makedirs: True
     - user: 1000
     - group: 1000
