@@ -10,6 +10,13 @@ plex:
     - binds:
       - /var/lib/plexdb:/config:rw
       - /tmp/plex:/transcode:rw
+      - /mnt/glusterfs/masters_DVR:/srv/masters_DVR:ro
+      - /mnt/glusterfs/masters_Koi-Pond:/srv/masters_Koi-Pond:ro
+      - /mnt/glusterfs/masters_Rose-Garden:/srv/masters_Rose-Garden:ro
+      - /mnt/glusterfs/masters_Dragons-Den:/srv/masters_Dragons-Den:ro
+      - /mnt/glusterfs/masters_Donna-Collection:/srv/masters_Donna-Collection:ro
+      - /mnt/glusterfs/masters_Roger-Roger:/srv/masters_Roger-Roger:ro
+      - /mnt/glusterfs/plexmedia_symlinks:/srv/plexmedia_symlinks:rw
       - /mnt/glusterfs/plexmedia_DVR_TV:/data/DVR_TV:rw
       - /mnt/glusterfs/plexmedia_DVR_Movies:/data/DVR_Movies:rw
       - /mnt/glusterfs/plexmedia_Koi-Pond_TV:/data/Koi-Pond_TV:rw

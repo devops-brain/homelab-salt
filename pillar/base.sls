@@ -22,6 +22,7 @@ gluster:
     - 'masters_Donna-Collection'
     - 'masters_Roger-Roger'
     - 'plex-backups'
+    - 'plexmedia_symlinks'
   volumes_distributed:
     - 'plexmedia_DVR_TV'
     - 'plexmedia_DVR_Movies'
