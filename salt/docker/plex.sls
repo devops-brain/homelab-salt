@@ -2,8 +2,13 @@
 
 
 
-## TODO:  enfore share perms, the way the jenkins share's perms are managed
-
+# enfore share perms
+/var/glusterfs/plexmedia_symlinks:
+  file.directory:
+    - makedirs: True
+    - user: 10000
+    - group: 10000
+    - mode: 744
 
 plex:
   docker_container.running:
