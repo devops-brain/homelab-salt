@@ -9,7 +9,7 @@
     - makedirs: True
     - user: 10000
     - group: 10000
-    - mode: 744
+    - mode: 755
 
 plex:
   docker_container.running:

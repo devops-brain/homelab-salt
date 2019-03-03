@@ -8,7 +8,7 @@
     - makedirs: True
     - user: 1000
     - group: 1000
-    - mode: 744
+    - mode: 755
 
 jenkins:
   docker_container.running:
