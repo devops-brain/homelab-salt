@@ -13,6 +13,8 @@ gluster:
     {% endfor %}
   volumes_redundancy:
     - 'jenkins'
+    - 'salt-conf'
+    - 'salt-code'
     - 'legacy'
     - 'google-domains-ddns'
     - 'masters_DVR'
@@ -23,19 +25,6 @@ gluster:
     - 'masters_Roger-Roger'
     - 'plex-backups'
     - 'plexmedia_symlinks'
-  volumes_distributed:
-    - 'plexmedia_DVR_TV'
-    - 'plexmedia_DVR_Movies'
-    - 'plexmedia_Koi-Pond_TV'
-    - 'plexmedia_Koi-Pond_Movies'
-    - 'plexmedia_Rose-Garden_TV'
-    - 'plexmedia_Rose-Garden_Movies'
-    - 'plexmedia_Dragons-Den_TV'
-    - 'plexmedia_Dragons-Den_Movies'
-    - 'plexmedia_Donna-Collection_TV'
-    - 'plexmedia_Donna-Collection_Movies'
-    - 'plexmedia_Roger-Roger_TV'
-    - 'plexmedia_Roger-Roger_Movies'
     - 'TARDIS'
 
 jumpcloud:

@@ -4,6 +4,12 @@
 
 
 salt-master:
+#  mount.mounted:
+#    - name: /etc/salt
+#    - device: /mnt/glusterfs/salt-conf
+#    - fstype: bind
+#    - mkmnt: True
+#    - persist: True
   pkg:
     - installed
   service.running:
