@@ -10,6 +10,7 @@ glusterfs-client:
     - installed
 
 {% for volume in volume_redundancy_list %}
+{% if 'salt-conf' != volume %}
 /mnt/glusterfs/{{ volume }}:
   mount.mounted:
     - name: /mnt/glusterfs/{{ volume }}
@@ -22,6 +23,7 @@ glusterfs-client:
     - pass_num: 0
     - device_name_regex:
       - ({{ glusterfs_host_list|join('|') }}):/{{ volume }}
+{% endif %}
 {% endfor %}
 
 #{% for volume in volumes_distributed_list %}
