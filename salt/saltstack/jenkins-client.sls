@@ -26,8 +26,8 @@ jenkins-installer:
     - group: root
     - mode: '0755'
     - skip_verify: True
-    - watch_in:
-      - service: jenkins-agent.service
+#    - watch_in:
+#      - service: jenkins-agent.service
 
 #jenkins-agent.service:
 #  file.managed:
