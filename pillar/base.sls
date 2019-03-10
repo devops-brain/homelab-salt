@@ -14,7 +14,7 @@ gluster:
   volumes_redundancy:
     - 'jenkins'
     - 'salt-conf'
-    - 'salt-code'
+#    - 'salt-code'
     - 'legacy'
     - 'google-domains-ddns'
     - 'masters_DVR'
