@@ -5,7 +5,6 @@
 
 
 salt-master:
-/mnt/glusterfs/salt-conf:
   mount.mounted:
     - name: /etc/salt
     - device: {{ glusterfs_host_list[0] }},{{ glusterfs_host_list[1] }},{{ glusterfs_host_list[2] }}:/salt-conf
