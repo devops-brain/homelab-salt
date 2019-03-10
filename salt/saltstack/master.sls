@@ -16,7 +16,7 @@ salt-master:
     - dump: 0
     - pass_num: 0
     - device_name_regex:
-      - ({{ glusterfs_host_list|join('|') }}):/{{ volume }}
+      - ({{ glusterfs_host_list|join('|') }}):/salt-conf
   pkg:
     - installed
   service.running:
