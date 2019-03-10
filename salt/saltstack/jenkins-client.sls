@@ -29,28 +29,28 @@ jenkins-installer:
     - watch_in:
       - service: jenkins-agent.service
 
-jenkins-agent.service:
-  file.managed:
-    - name: /etc/systemd/system/jenkins-agent.service
-    - user: root
-    - group: root
-    - contents: |
-        [Unit]
-        Description=jenkins-agent
-        After=network.target auditd.service
-
-        [Service]
-        Type=notify
-        Restart=always
-        WorkingDirectory=/var/jenkins
-        User=root
-        Group=root
-        ExecStatPre=/bin/sleep 10m
-        ExecStart=/usr/bin/java -jar /usr/local/bin/agent.jar -jnlpUrl {{salt['pillar.get']('jenkins:master_url')}}/computer/{{hostname}}/slave-agent.jnlp -secret {{salt['pillar.get']('jenkins:jnlp:secret', '')}} -workDir "/var/jenkins"
-
-        [Install]
-        WantedBy=multi-user.target
-        Alais=jenkins-agent.service
+#jenkins-agent.service:
+#  file.managed:
+#    - name: /etc/systemd/system/jenkins-agent.service
+#    - user: root
+#    - group: root
+#    - contents: |
+#        [Unit]
+#        Description=jenkins-agent
+#        After=network.target auditd.service
+#
+#        [Service]
+#        Type=notify
+#        Restart=always
+#        WorkingDirectory=/var/jenkins
+#        User=root
+#        Group=root
+#        ExecStatPre=/bin/sleep 10m
+#        ExecStart=/usr/bin/java -jar /usr/local/bin/agent.jar -jnlpUrl {{salt['pillar.get']('jenkins:master_url')}}/computer/{{hostname}}/slave-agent.jnlp -secret {{salt['pillar.get']('jenkins:jnlp:secret', '')}} -workDir "/var/jenkins"
+#
+#        [Install]
+#        WantedBy=multi-user.target
+#        Alais=jenkins-agent.service
 #  service.running:
 #    - enable: True
 
