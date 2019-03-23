@@ -12,7 +12,8 @@ base:
     - docker.jnlp
     - docker.samba
     - docker.plex
-    - docker.ddns
+#    - docker.ddns
+    - docker.netatalk
   'nuc5cpyh-01':
     - gluster.hosts
     - gluster.client
