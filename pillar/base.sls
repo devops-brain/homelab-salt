@@ -16,6 +16,7 @@ gluster:
     - 'salt-conf'
     - 'legacy'
     - 'google-domains-ddns'
+    - 'duplicati'
     - 'masters_DVR'
     - 'masters_Koi-Pond'
     - 'masters_Rose-Garden'
