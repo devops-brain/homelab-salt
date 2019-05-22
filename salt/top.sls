@@ -19,6 +19,7 @@ base:
     - gluster.client
     - docker
     - docker.jnlp
+    - docker.duplicati
     - docker.samba
 #  'Zotac-mini-01':
 #    - gluster.hosts
