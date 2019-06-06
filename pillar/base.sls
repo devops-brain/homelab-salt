@@ -47,10 +47,10 @@ jumpcloud:
 
 salt:
   minion:
-    master: '192.168.7.69'
+    master: '192.168.7.10'
 
 jenkins:
-  master_url: 'http://192.168.7.69:8080'
+  master_url: 'http://192.168.7.10:8080'
 
 samba:
   password: |
