@@ -6,7 +6,7 @@
 
 salt-master:
   mount.mounted:
-    - name: /etc/salt
+    - name: /mnt/glusterfs/salt-conf
     - device: {{ glusterfs_host_list[0] }},{{ glusterfs_host_list[1] }},{{ glusterfs_host_list[2] }}:/salt-conf
     - fstype: glusterfs
     - opts: _netdev,rw,defaults,direct-io-mode=disable
