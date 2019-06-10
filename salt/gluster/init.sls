@@ -19,6 +19,7 @@ glusterfs-service:
       {% endif %}
       {% endfor %}
 
+{% if hostname == glusterfs_host_list[0] %}
 {% for volume in salt['pillar.get']('gluster:volumes_redundancy', ['jenkins', 'legacy']) %}
 gluster_volume_{{ volume }}:
   glusterfs.volume_present:
@@ -30,6 +31,7 @@ gluster_volume_{{ volume }}:
     - replica: 3
     - start: True
 {% endfor %}
+{% endif %}
 
 ## TODO:  add dispersed volume support, instead of default triple redundancy raid10 or distributed (enable when added)
 #{% for volume in salt['pillar.get']('gluster:volumes_distributed', ['TARDIS', 'plexmedia']) %}
