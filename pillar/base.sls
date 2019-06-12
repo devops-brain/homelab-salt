@@ -46,7 +46,7 @@ jumpcloud:
 
 salt:
   minion:
-    master: '192.168.7.10'
+    master: 'salt'
 
 jenkins:
   master_url: 'http://192.168.7.10:8080'

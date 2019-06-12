@@ -19,29 +19,22 @@ glusterfs-service:
       {% endif %}
       {% endfor %}
 
-{% if hostname == glusterfs_host_list[0] %}
-{% for volume in salt['pillar.get']('gluster:volumes_redundancy', ['jenkins', 'legacy']) %}
-gluster_volume_{{ volume }}:
-  glusterfs.volume_present:
-    - name: {{ volume }}
-    - bricks:
-        {% for host in glusterfs_host_list %}
-        - {{host}}:/mnt/gluster_cow/{{volume}}
-        {% endfor %}
-    - replica: 3
-    - start: True
-{% endfor %}
-
-## TODO:  add dispersed volume support, instead of default triple redundancy raid10 or distributed (enable when added)
-{% for volume in salt['pillar.get']('gluster:volumes_distributed', ['restore']) %}
-gluster_volume_{{ volume }}:
-  glusterfs.volume_present:
-    - name: {{ volume }}
-    - bricks:
-        {% for host in glusterfs_host_list %}
-        - {{host}}:/mnt/gluster_cow/{{volume}}
-        {% endfor %}
-    - start: True
-{% endfor %}
-{% endif %}
-
+/etc/netplan/01-netcfg.yaml:
+  file.managed:
+    - user: root
+    - group: root
+    - contents: |
+        # This file describes the network interfaces available on your system
+        # For more information, see netplan(5).
+        network:
+          version: 2
+          renderer: networkd
+          ethernets:
+            eth0:
+              addresses: [ 192.168.7.1{{hostname.split('.')[0][-2:]}}/24 ]
+              gateway4: 192.168.7.1
+              nameservers:
+                search: [khoyi.us]
+                addresses:
+                  - "192.168.7.10"
+              mtu: 9000
