@@ -9,7 +9,7 @@
 gluster:
   hosts:
     {% for instance in range(12) %}
-    - odroid-hc2-{{ '%02d' % (instance+1) }}
+    - odroid-hc2-{{ '%02d' % (instance+1) }}.khoyi.us
     {% endfor %}
   volumes_redundancy:
     - 'jenkins'

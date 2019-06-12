@@ -11,7 +11,7 @@ glusterfs-service:
   service.running:
     - name: glusterd
     - enable: True
-  {% if hostname == glusterfs_host_list[0] %}
+  {% if glusterfs_host_list[0] in hostname %}
   glusterfs.peered:
     - names:
       {% for host in glusterfs_host_list %}
