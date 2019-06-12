@@ -14,9 +14,9 @@ jumpcloud_dependencies:
 # disable root login on Linux
 {% if salt['grains.get']('osarch') != 'armhf' %}
 
-#disable_root:
-#  cmd.run:
-#    - name: "sudo usermod -p '!' root"
+disable_root:
+  cmd.run:
+    - name: "sudo usermod -p '!' root"
 
 # add host to jumpcloud if not so
 jumpcloud:
