@@ -1,5 +1,6 @@
 #!jinja|yaml
 
+{% set hostname = salt['grains.get']('id') %}
 
 
 {%- if grains['kernel'] == 'Linux' %}
@@ -11,11 +12,13 @@ jumpcloud_dependencies:
       - sudo
 
 # disable root login on Linux
-{% if salt['grains.get']('kernel') == 'Linux' %}
-disable_root:
-  cmd.run:
-    - name: "sudo usermod -p '!' root"
-{% endif %}
+#{% if salt['grains.get']('kernel') == 'Linux' %}
+#{% if "odroid" not in hostname %}
+#disable_root:
+#  cmd.run:
+#    - name: "sudo usermod -p '!' root"
+#{% endif %}
+#{% endif %}
 
 # add host to jumpcloud if not so
 jumpcloud:
