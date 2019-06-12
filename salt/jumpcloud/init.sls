@@ -12,13 +12,11 @@ jumpcloud_dependencies:
       - sudo
 
 # disable root login on Linux
-#{% if salt['grains.get']('kernel') == 'Linux' %}
-#{% if "odroid" not in hostname %}
+{% if salt['grains.get']('osarch') == 'armhf' %}
+
 #disable_root:
 #  cmd.run:
 #    - name: "sudo usermod -p '!' root"
-#{% endif %}
-#{% endif %}
 
 # add host to jumpcloud if not so
 jumpcloud:
@@ -27,6 +25,10 @@ jumpcloud:
     - unless: dir "/opt/jc"
 
 {%- endif %}
+{%- endif %}
+
+
+
 {%- if grains['kernel'] == 'Windows' %}
 #jumpcloud-windows:
 #  pkg.installed:
