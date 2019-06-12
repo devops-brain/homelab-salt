@@ -12,7 +12,7 @@ jumpcloud_dependencies:
       - sudo
 
 # disable root login on Linux
-{% if salt['grains.get']('osarch') == 'armhf' %}
+{% if salt['grains.get']('osarch') != 'armhf' %}
 
 #disable_root:
 #  cmd.run:
