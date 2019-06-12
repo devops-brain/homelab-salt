@@ -11,15 +11,15 @@ glusterfs-service:
   service.running:
     - name: glusterd
     - enable: True
+  {% if hostname == glusterfs_host_list[0] %}
   glusterfs.peered:
     - names:
-      {% if hostname == glusterfs_host_list[0] %}
       {% for host in glusterfs_host_list %}
       {% if host != hostname %}
       - {{host}}
       {% endif %}
       {% endfor %}
-      {% endif %}
+  {% endif %}
 
 /etc/netplan/01-netcfg.yaml:
   file.managed:
