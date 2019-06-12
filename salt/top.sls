@@ -27,6 +27,6 @@ base:
   'odroid-hc2-*':
     - gluster.disks
     - gluster
-#    - gluster.volumes
+    - gluster.volumes
     - gluster.client
 
