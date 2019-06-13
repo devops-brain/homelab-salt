@@ -40,3 +40,8 @@ glusterfs-service:
                 addresses:
                   - "192.168.7.10"
               mtu: 9000
+
+rsync:
+  pkg:
+    - installed
+
