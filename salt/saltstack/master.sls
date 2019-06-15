@@ -21,6 +21,7 @@ salt-master:
   service.running:
     - enable: True
 
+## TODO:  move to bootstrap script
 gpg-dependency-packages:
   pkg.installed:
     - pkgs:
