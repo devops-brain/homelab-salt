@@ -30,18 +30,18 @@ jumpcloud:
   xConnectKey: |
     -----BEGIN PGP MESSAGE-----
 
-    hQGMA/c42ow1fQGbAQv9F+5p+H6tawEsblO3EacyDEckSiw4eCO1c1MP9RkqOAMC
-    SeuSvz8xhH6+XyxBy3g/AfwQqSdWx3k/wDtFCcA2eAuEWwIuAkebeG7b7DzASvYG
-    EDejPMdIlta5nK5+wUQmuh+srf8tH6HbKC5wWJqbzgZP2j4bZnFxRMzzQtTxO/lQ
-    p152tMMHAy7LUPDL3GZhkcTG8XuiyW9IHSCqxE5Apf3MXf3AZD9OnDszsFw9Fi5k
-    7ihK6VZXHdbDKx2yPp9T5mX2Nix1tE6m8qDUv9IBbuYethRoHMOgMFXvfrtl+ZPq
-    4dT6PTx2DlfMq1ihL5dJaIUva37eDa5dTC66PbA5Db+e/Z8V8m9sAsq/jpG933Dz
-    ZMtWPvNmh+oE02I0y+J3hHJpgCPApTUSdsI+ouw1QYYbFpUIg1c4Ym+kc8iEz8it
-    d9kdR7umjs+j92/A4kyckz8ENkTH1gBoM87J8oedNe1YE7ap4csL+2ymdiHC+dNG
-    BPrQQ++yZ/JTL2V2feNd0mMB45FeDZsPpA2q/IMJZpg7gBuAab/dZqTeGGIp7nu1
-    lIWbGAWj2VCbpU+4/wTBlUWp6NQmyEvwSaKXOFYkwivPKAI69//oq9hTnRcEcw7x
-    XfhQ5ZHqI+nflB19E2jrG2+Krwk=
-    =dYjB
+    hQGMAygOx8UbPFfvAQwAyD3d5ot9OjIg3f/SFep+9a1tuuUM7UZ5M9Hi/3/Jq+uM
+    u1R5sVtEv+fwQ+rNATA3LUlwY5ceWjJ4cu0dTZ5fY3MJiwyP2EL4tsVj16HgGACX
+    IlLty1P4yRY1Hxp8UXksE+9cUlpS4b8pF+ntwldZAV/yokDeH5rdqV9DE09wwGiT
+    0XWES8VlKPQ6UgD5yFsFFF/fkeLVfXDsPgBihRCTdP1/LlOqRu8NNl/nIfNj4n07
+    vJCr0bho3D9b2JR0sx/Yk2T+wLLVZuizJdzz5wuQSxoZo8Z4eEMhNaSUk/j3d0Pa
+    wQ/m7kbbcJzmvKO5tw9t+JRLOJIPeLqWHKqBKzD20Luf+BMeFUytuKTK/bL5RWai
+    SlP5FlHRzX9lVMebPdF4AywJOC8q3NizqISwBiyK7GO69iHVLfUlOex+NPJhschb
+    ANhnXK7RCJSrYNzxhFu92tWCCwg/AvhF6+EjkclRpsSvyFySHcOd8E8x2QLRBqas
+    t4Is7ZYFgT3N8nS6DHOq0mMB5U/u8HTIX2YhvzjEMpNAHWhGznsHvuHyiaze3aoG
+    2/o0IxRmMJW1FyZ0S1PYMZEZwWP8phi67HbEtaNNv6qwmvfyW9SfuSH28FlSPfam
+    bPUikp3lTyHtNWDvYt7LVD3v+WY=
+    =TJ+x
     -----END PGP MESSAGE-----
 
 salt:
@@ -55,16 +55,15 @@ samba:
   password: |
     -----BEGIN PGP MESSAGE-----
 
-    hQGMA/c42ow1fQGbAQwAjC81YyMycRDDIzxwzFiylNi8J2BQkpkz6djsCgZhNPMO
-    9kLRW08EC7UkzOSY2FHfTH0A4zLgyrDY3NwhsAXWjeUg1gw5b/F/1nZ+3RXdhbd1
-    fvDfIZog7k4+lWU6pksXIiJB/HmW44bx8mBKEhCslpGNuK3RYGq32N4PnRgXKdXW
-    ptA+VWkT1Ah7+OwGRa7uOt8aPyheAo7GSWeNeIOHlRxcjDpebUKpvyya6nuVJxDS
-    giEddsJtsav9lyGWzBPkVzFHknkAkF6ZSZn8IKQLuX4ErJV5cZ0BCjQ+cC4oxGsH
-    sVL8TD4ndxfYFJguGptfag9JG+mWzhWGreejNlLoX55svGKD09Ig84X6RKKiduXz
-    FayaZeGWjtEkDyV2vbm2eawX+gkcM9aESeCOZYajK87KvLzsDZzi8uFop5I+g4kh
-    1FtLULdoGqBZp+QKEdllwn0socgHVXPoGMzGYnPhRYGpJz95eD84JNrmLd81Mwa0
-    K85B3imKcxibqVk9ebWn0kgB/p20Nwrx5AxKHIScyLkz41e6UPoT2+bYVDa431Bu
-    xybMjvg7PocT63oIxr+vb9gt/Y+kkWpV3SWm0zM4FQzE3/8BNXcDVo0=
-    =mOCP
+    hQGMAygOx8UbPFfvAQv/efa5yH3qZsxrNvS5rj9zPHssnQJq3qgVsTBCWmjhU9nt
+    Cw5xCUGSH/40s7ngs7vobHQw/M1vcjJKJOXYzaopCeNOQi2bkS5BfUnCp0emgawp
+    zA961okQVOS0wXdTAXi2G30l+Kerr6Owsy7tnInJm3DKbQtdBxo8H+50rLnrMS1o
+    FYSWVAbF3FiRW0w6z9cWACm9WawI6mPbRo6mcR4MUiRuU1WH6kbP2/Lku9PG6jG5
+    zEmLj+OPUOMf4xuvNPOfjzd7oFnmMnXGW4MPRgdOTjmiWEcTG8fyEgA050eleEup
+    +sI3IIgpE31e97gwm11pvhKiIplFaEmAt3o/rqFjjBvAxfDglOP9G7WqnIfWfDGY
+    hswsbSBCONXZPBYvi9h1jLU5+Cs2pSaNFef35LlhU5+DeT3BjkMLh3ssAlbkMrtS
+    F5WgHwW2tmHpbUhuWJ5U0xnzRHB0LmZXJdvQPpwcZwj9TZpnopMTCnKki7f1PZrt
+    criP6zPXI+rbK9dAJWWN0kgB7Gr0+e7w3lRoi/EyxgcVm5MC+4q9Y8RDj9Po0fyR
+    32N49enB/zhCVqHOYHSyvrQr2whsr3g03cicmg8za0RDAJljrAU7Ft8=
+    =ywcb
     -----END PGP MESSAGE-----
-
