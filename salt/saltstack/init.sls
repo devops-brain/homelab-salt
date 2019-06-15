@@ -21,7 +21,7 @@ saltstack-repo-key:
   cmd.run:
     - name: "wget -O - https://repo.saltstack.com/py3/ubuntu/18.04/amd64/2019.2/SALTSTACK-GPG-KEY.pub | apt-key add -"
 
-/etc/apt/sources.list.d/saltstack.repo:
+/etc/apt/sources.list.d/saltstack.list:
   file.managed:
     - create: True
     - makedirs: True
