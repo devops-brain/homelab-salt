@@ -7,12 +7,7 @@ base:
     - saltstack.jenkins-client
 #    - gluster.client
 #    - docker
-#    - docker.jenkins
 #    - docker.jnlp
-#    - docker.samba
-#    - docker.plex
-#    - docker.ddns
-#    - docker.netatalk
   'nuc5cpyh-01':
     - gluster.client
     - docker
@@ -24,9 +19,16 @@ base:
 #    - docker
 #    - docker.jnlp
 #    - docker.samba
+  'bad-wol*':
+    - gluster.client
+    - docker
+    - docker.jenkins
+    - docker.jnlp
+    - docker.plex
+    - docker.ddns
   'odroid-hc2-*':
     - gluster.disks
     - gluster
     - gluster.volumes
-    - gluster.client
+#    - gluster.client
 

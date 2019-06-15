@@ -18,14 +18,14 @@ gluster_volume_{{ volume }}:
 {% endfor %}
 
 ## TODO:  add dispersed volume support, instead of default triple redundancy raid10 or distributed (enable when added)
-{% for volume in salt['pillar.get']('gluster:volumes_distributed', ['recover']) %}
-gluster_volume_{{ volume }}:
-  glusterfs.volume_present:
-    - name: {{ volume }}
-    - bricks:
-        {% for host in glusterfs_host_list %}
-        - {{host}}:/mnt/gluster_cow/{{volume}}
-        {% endfor %}
-    - start: True
-{% endfor %}
-{% endif %}
+#{% for volume in salt['pillar.get']('gluster:volumes_distributed', ['recover']) %}
+#gluster_volume_{{ volume }}:
+#  glusterfs.volume_present:
+#    - name: {{ volume }}
+#    - bricks:
+#        {% for host in glusterfs_host_list %}
+#        - {{host}}:/mnt/gluster_cow/{{volume}}
+#        {% endfor %}
+#    - start: True
+#{% endfor %}
+#{% endif %}

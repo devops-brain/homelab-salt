@@ -42,8 +42,16 @@ btrfs-tools:
     - pass_num: 0
     - opts: 'compress=zlib,subvol=@gluster'
 
+btrfs-balance:
+  cron.present:
+    - name: btrfs balance start /mnt/btrfs
+    - user: root
+    - minute: 3
+    - hour: 1
+    - daymonth: '1-7'
+    - dayweek: 1
 
-## TODO:  create scrub and balance processes
+## if needed add scrub and/or defrag.  current setup doesn't benefit from regular runs...
 
 ## TODO:  consider snapshots
 
