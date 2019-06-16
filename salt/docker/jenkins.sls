@@ -10,10 +10,18 @@
     - group: 1000
     - mode: 755
 
+/var/jenkins_master-perms:
+  file.directory:
+    - name: /var/jenkins_master
+    - makedirs: True
+    - user: 1000
+    - group: 1000
+    - mode: 755
+
 jenkins:
   docker_container.running:
     - binds:
-      - /mnt/glusterfs/jenkins:/var/jenkins_home:rw
+      - /var/jenkins_master:/var/jenkins_home:rw
     - image: 'khoyi/jenkins:latest'
     - detach: True
     - network_mode: "host"
