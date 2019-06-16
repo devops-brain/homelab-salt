@@ -2,6 +2,7 @@ base:
   '*':
     - saltstack
     - jumpcloud
+    - common
   'nuc5ppyh-01':
     - saltstack.master
     - saltstack.jenkins-client
