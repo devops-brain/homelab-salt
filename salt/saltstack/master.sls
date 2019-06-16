@@ -4,6 +4,10 @@
 {% set glusterfs_host_list = salt['pillar.get']('gluster:hosts', ['odroid-hc2-01', 'odroid-hc2-02', 'odroid-hc2-03']) %}
 
 
+glusterfs-client:
+  pkg:
+    - installed
+
 salt-master:
   mount.mounted:
     - name: /mnt/glusterfs/salt-conf
