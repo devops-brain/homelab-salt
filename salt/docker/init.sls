@@ -3,7 +3,7 @@
 
 
 
-python-pip:
+python3-pip:
   pkg.installed:
   - reload_modules: True
 
@@ -17,7 +17,7 @@ docker:
   pip.installed:
     - name: docker
     - require:
-      - pkg: python-pip
+      - pkg: python3-pip
 
 docker.io:
   pkg:
