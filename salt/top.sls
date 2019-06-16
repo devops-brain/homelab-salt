@@ -27,6 +27,7 @@ base:
     - docker.jnlp
     - docker.plex
     - docker.ddns
+    - docker.samba
   'odroid-hc2-*':
     - gluster.disks
     - gluster
