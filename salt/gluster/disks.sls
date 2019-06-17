@@ -48,8 +48,8 @@ btrfs-balance:
     - user: root
     - minute: 3
     - hour: 1
-    - daymonth: '1-7'
-    - dayweek: 1
+    - daymonth: 1
+
 
 ## if needed add scrub and/or defrag.  current setup doesn't benefit from regular runs...
 
