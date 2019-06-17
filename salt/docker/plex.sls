@@ -10,9 +10,9 @@
     - user: 10000
     - group: 10000
     - mode: 755
-/mnt/glusterfs/plexmedia_picturess-perms:
+/mnt/glusterfs/plexmedia_pictures-perms:
   file.directory:
-    - name: /mnt/glusterfs/plexmedia_picturess
+    - name: /mnt/glusterfs/plexmedia_pictures
     - makedirs: True
     - user: 10000
     - group: 10000
@@ -30,7 +30,7 @@ plex:
       - /mnt/glusterfs/masters_Donna-Collection:/srv/masters_Donna-Collection:ro
       - /mnt/glusterfs/masters_Roger-Roger:/srv/masters_Roger-Roger:ro
       - /mnt/glusterfs/plexmedia_symlinks:/srv/plexmedia_symlinks:rw
-      - /mnt/glusterfs/plexmedia_picturess:/srv/plexmedia_picturess:rw
+      - /mnt/glusterfs/plexmedia_pictures:/srv/plexmedia_pictures:rw
       - /mnt/glusterfs/plex-backups:/data/backups:rw
     - image: plexinc/pms-docker:plexpass
     - detach: True
