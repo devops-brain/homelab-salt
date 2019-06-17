@@ -25,6 +25,7 @@ gluster:
     - 'masters_Roger-Roger'
     - 'plex-backups'
     - 'plexmedia_symlinks'
+    - 'plexmedia_pictures'
 
 jumpcloud:
   xConnectKey: |
