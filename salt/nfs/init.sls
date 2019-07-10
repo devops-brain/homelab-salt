@@ -7,8 +7,16 @@ nfs-common:
   pkg:
     - installed
 
+/mnt/{{salt['pillar.get']('nfs:server')}}/nfs:
+  file.directory:
+    - name: /mnt/glusterfs/plexmedia_symlinks
+    - makedirs: True
+    - user: 1001
+    - group: 1001
+    - mode: 777
+
 ## mount share from ideal-mouse
-{{salt['pillar.get']('nfs:server')}}:
+/mnt/{{salt['pillar.get']('nfs:server')}}/nfs:
   mount.mounted:
     - device: {{salt['pillar.get']('nfs:server')}}:/srv/nfs
     - fstype: nfs
