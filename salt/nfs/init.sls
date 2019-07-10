@@ -7,7 +7,7 @@ nfs-common:
   pkg:
     - installed
 
-/mnt/{{salt['pillar.get']('nfs:server')}}/nfs:
+{{salt['pillar.get']('nfs:server')}}_mountpoint:
   file.directory:
     - name: /mnt/{{salt['pillar.get']('nfs:server')}}/nfs
     - makedirs: True
