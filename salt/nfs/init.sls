@@ -9,7 +9,7 @@ nfs-common:
 
 /mnt/{{salt['pillar.get']('nfs:server')}}/nfs:
   file.directory:
-    - name: /mnt/glusterfs/plexmedia_symlinks
+    - name: /mnt/{{salt['pillar.get']('nfs:server')}}/nfs
     - makedirs: True
     - user: 1001
     - group: 1001

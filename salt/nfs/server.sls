@@ -7,7 +7,13 @@ nfs-kernel-server:
   pkg:
     - installed
 
-## todo, make dir
+/srv/nfs:
+  file.directory:
+    - name: /srv/nfs
+    - makedirs: True
+    - user: 1001
+    - group: 1001
+    - mode: 777
 
 ## /etc/exports
 nfs-share:
