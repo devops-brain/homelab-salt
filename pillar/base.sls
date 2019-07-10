@@ -68,3 +68,6 @@ samba:
     32N49enB/zhCVqHOYHSyvrQr2whsr3g03cicmg8za0RDAJljrAU7Ft8=
     =ywcb
     -----END PGP MESSAGE-----
+
+nfs:
+  server: 'ideal-mouse'
