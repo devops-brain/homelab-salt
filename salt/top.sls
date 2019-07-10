@@ -52,5 +52,7 @@ base:
     - nfs
   'odroid-hc2-09':
     - nfs
-  'odroid-hc2-1*':
+  'odroid-hc2-10':
+    - nfs
+  'odroid-hc2-12':
     - nfs
