@@ -4,22 +4,22 @@
 {% set glusterfs_host_list = salt['pillar.get']('gluster:hosts', ['odroid-hc2-01', 'odroid-hc2-02', 'odroid-hc2-03']) %}
 
 
-glusterfs-service:
-  pkg:
-    - name: glusterfs-server
-    - installed
-  service.running:
-    - name: glusterd
-    - enable: True
-  {% if glusterfs_host_list[0] in hostname %}
-  glusterfs.peered:
-    - names:
-      {% for host in glusterfs_host_list %}
-      {% if host != hostname %}
-      - {{host}}
-      {% endif %}
-      {% endfor %}
-  {% endif %}
+#glusterfs-service:
+#  pkg:
+#    - name: glusterfs-server
+#    - installed
+#  service.running:
+#    - name: glusterd
+#    - enable: True
+#  {% if glusterfs_host_list[0] in hostname %}
+#  glusterfs.peered:
+#    - names:
+#      {% for host in glusterfs_host_list %}
+#      {% if host != hostname %}
+#      - {{host}}
+#      {% endif %}
+#      {% endfor %}
+#  {% endif %}
 
 /etc/netplan/01-netcfg.yaml:
   file.managed:

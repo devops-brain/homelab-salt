@@ -31,7 +31,7 @@ base:
   'odroid-hc2-*':
     - gluster.disks
     - gluster
-    - gluster.volumes
+#    - gluster.volumes
   'ideal-mouse':
     - nfs.server
   'odroid-hc2-01*':
