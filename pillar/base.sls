@@ -70,4 +70,4 @@ samba:
     -----END PGP MESSAGE-----
 
 nfs:
-  server: 'ideal-mouse'
+  server: 'real-beagle'

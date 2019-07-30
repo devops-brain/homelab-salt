@@ -3,23 +3,17 @@ base:
     - saltstack
     - jumpcloud
     - common
+    - nfs
   'nuc5ppyh-01':
     - saltstack.master
     - saltstack.jenkins-client
 #    - gluster.client
 #    - docker
 #    - docker.jnlp
-  'nuc5cpyh-01':
-    - gluster.client
-    - docker
-#    - docker.jnlp
-#    - docker.duplicati
-    - docker.samba
+#  'nuc5cpyh-01':
+#    - desktop
 #  'Zotac-mini-01':
-#    - gluster.client
-#    - docker
-#    - docker.jnlp
-#    - docker.samba
+#    - desktop
   'bad-wol*':
     - gluster.client
     - docker
@@ -28,31 +22,7 @@ base:
     - docker.plex
     - docker.ddns
     - docker.samba
-  'odroid-hc2-*':
-    - gluster.disks
-    - gluster
-#    - gluster.volumes
   'ideal-mouse':
     - nfs.server
-  'odroid-hc2-01*':
-    - nfs
-  'odroid-hc2-02*':
-    - nfs
-  'odroid-hc2-03*':
-    - nfs
-  'odroid-hc2-04*':
-    - nfs
-  'odroid-hc2-05*':
-    - nfs
-  'odroid-hc2-06*':
-    - nfs
-  'odroid-hc2-07*':
-    - nfs
-  'odroid-hc2-08*':
-    - nfs
-  'odroid-hc2-09*':
-    - nfs
-  'odroid-hc2-10*':
-    - nfs
-  'odroid-hc2-12*':
-    - nfs
+  'real-beagle':
+    - nfs.server
