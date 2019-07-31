@@ -10,12 +10,6 @@ pipeline {
         sh 'cd /srv; git reset --hard; git checkout master; git pull'
       }
     }
-    stage('Pilot push to odroid-hc2-01'){
-      steps {
-        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-        sh "salt 'odroid-hc2-01*' state.highstate"
-      }
-    }
     stage('Push code to saltmaster'){
       steps {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"

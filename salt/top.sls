@@ -15,7 +15,7 @@ base:
 #  'Zotac-mini-01':
 #    - desktop
   'bad-wol*':
-    - gluster.client
+#    - gluster.client
     - docker
     - docker.jenkins
     - docker.jnlp
