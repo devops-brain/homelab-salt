@@ -22,7 +22,6 @@ base:
     - docker.plex
     - docker.ddns
     - docker.samba
-  'ideal-mouse':
     - nfs.server
   'real-beagle':
     - nfs.server
