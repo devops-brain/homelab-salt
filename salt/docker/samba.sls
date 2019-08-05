@@ -8,7 +8,7 @@ samba:
   docker_container.running:
     - binds:
     ## TODO:  clean up gluster share structure
-      - /mnt/glusterfs:/mnt/glusterfs:rw
+      - /mnt/real-beagle/nfs:/mnt/glusterfs:rw
     - image: 'dperson/samba:latest'
     - detach: True
     - cmd:
