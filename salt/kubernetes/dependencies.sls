@@ -1,7 +1,0 @@
-
-
-
-
-kubectl:
-  pkg:
-    - installed
