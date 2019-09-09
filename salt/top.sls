@@ -15,13 +15,14 @@ base:
 #  'Zotac-mini-01':
 #    - desktop
   'bad-wol*':
-#    - gluster.client
     - docker
-    - docker.jenkins
-    - docker.jnlp
-    - docker.plex
-    - docker.ddns
-    - docker.samba
+#    - docker.jenkins
+#    - docker.jnlp
+#    - docker.plex
+#    - docker.ddns
+#    - docker.samba
     - nfs.server
   'real-beagle':
+    - nfs.server
+  'steady-coral':
     - nfs.server

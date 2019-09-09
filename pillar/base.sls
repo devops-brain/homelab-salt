@@ -70,4 +70,4 @@ samba:
     -----END PGP MESSAGE-----
 
 nfs:
-  server: 'real-beagle'
+  server: 'steady-coral'
