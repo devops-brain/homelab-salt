@@ -1,5 +1,6 @@
+#!jinja|yaml
 
-
+{% set hostname = salt['grains.get']('id') %}
 
 
 saltstack-repo-key:
