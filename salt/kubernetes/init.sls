@@ -3,7 +3,7 @@
 {% set hostname = salt['grains.get']('id') %}
 
 
-saltstack-repo-key:
+kubernetes-repo-key:
   cmd.run:
     - name: "wget -O - https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -"
 
