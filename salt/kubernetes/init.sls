@@ -6,7 +6,7 @@ saltstack-repo-key:
   cmd.run:
     - name: "wget -O - https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -"
 
-/etc/apt/sources.list.d/saltstack.list:
+/etc/apt/sources.list.d/kubernetes.list:
   file.managed:
     - create: True
     - makedirs: True
@@ -23,5 +23,5 @@ kubernetes-dependencies:
       - kubeadm
       - docker.io
     - require:
-      - file: /etc/apt/sources.list.d/saltstack.list:
+      - file: /etc/apt/sources.list.d/kubernetes.list:
 

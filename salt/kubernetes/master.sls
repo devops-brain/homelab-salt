@@ -9,5 +9,5 @@ kubernetes-master:
     - pkgs:
       - kubectl
     - require:
-      - file: /etc/apt/sources.list.d/saltstack.list:
+      - file: /etc/apt/sources.list.d/kubernetes.list:
 

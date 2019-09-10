@@ -26,3 +26,4 @@ base:
     - nfs.server
   'steady-coral':
     - nfs.server
+    - kubernetes
