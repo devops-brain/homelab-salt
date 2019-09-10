@@ -13,8 +13,8 @@ saltstack-repo-key:
     - makedirs: True
     - contents: |
         deb http://apt.kubernetes.io/ kubernetes-xenial main
-    - require:
-      - cmd: saltstack-repo-key
+#    - require:
+#      - cmd: saltstack-repo-key
 
 kubernetes-dependencies:
   pkg.installed:
@@ -23,6 +23,6 @@ kubernetes-dependencies:
       - kubelet
       - kubeadm
       - docker.io
-    - require:
-      - file: /etc/apt/sources.list.d/kubernetes.list:
+#    - require:
+#      - file: /etc/apt/sources.list.d/kubernetes.list:
 
