@@ -16,14 +16,20 @@ kubernetes-repo-key:
     - require:
       - cmd: kubernetes-repo-key
 
-kubernetes-dependencies:
-  pkg:
-    - installed:
-      - pkgs:
-        - apt-transport-https
-        - kubelet
-        - kubeadm
-        - docker.io
+apt-transport-https:
+   pkg:
+    - installed
+
+docker.io:
+   pkg:
+    - installed
+
+kubelet:
+  pkg.installed:
     - require:
       - file: /etc/apt/sources.list.d/kubernetes.list:
 
+kubeadm:
+  pkg.installed:
+    - require:
+      - file: /etc/apt/sources.list.d/kubernetes.list:
