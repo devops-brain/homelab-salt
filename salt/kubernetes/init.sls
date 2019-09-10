@@ -13,8 +13,8 @@ kubernetes-repo-key:
     - makedirs: True
     - contents: |
         deb http://apt.kubernetes.io/ kubernetes-xenial main
-#    - require:
-#      - cmd: saltstack-repo-key
+    - require:
+      - cmd: kubernetes-repo-key
 
 kubernetes-dependencies:
   pkg.installed:
