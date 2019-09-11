@@ -24,10 +24,13 @@ docker.io:
    pkg:
     - installed
 
-#kubelet:
-#  pkg.installed:
-#    - require:
-#      - file: /etc/apt/sources.list.d/kubernetes.list:
+kubelet:
+  pkg.installed:
+    - pkgs:
+      - kubelet
+      - kubeadm
+    - require:
+      - file: /etc/apt/sources.list.d/kubernetes.list:
 
 #kubeadm:
 #  pkg.installed:
