@@ -23,3 +23,5 @@ kubelet:
       - apt-transport-https
       - kubelet
       - kubeadm
+    - require:
+      - file: /etc/apt/sources.list.d/kubernetes.list

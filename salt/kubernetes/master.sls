@@ -5,5 +5,5 @@
 
 
 kubectl:
-  pkg
+  pkg:
     - installed
