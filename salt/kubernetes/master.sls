@@ -24,7 +24,7 @@ kubernetes-init:
   cmd.run:
     - name: "kubeadm init --pod-network-cidr=10.0.0.0/10 >> /etc/kubernetes/cluster_initialized.txt"
     - require:
-      - pkg: master-packages
+      - service: docker.service
     - unless: ls /etc/kubernetes/cluster_initialized.txt
 
 
