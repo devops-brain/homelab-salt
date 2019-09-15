@@ -31,5 +31,5 @@ docker.service:
     - enable: True
     - reload: False
     - watch:
-      - pkg: docker.io
+      - pkg: dependency-packages
 
