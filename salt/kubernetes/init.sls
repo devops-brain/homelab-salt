@@ -26,3 +26,10 @@ dependency-packages:
     - require:
       - file: /etc/apt/sources.list.d/kubernetes.list
 
+docker.service:
+  service.running:
+    - enable: True
+    - reload: False
+    - watch:
+      - pkg: docker.io
+
