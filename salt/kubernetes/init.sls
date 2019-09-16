@@ -5,6 +5,7 @@
 
 swapoff:
   mount.unmounted:
+    - name: none
     - device: /swap.img
     - persist: True
 
