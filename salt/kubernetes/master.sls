@@ -25,6 +25,7 @@ kubernetes-init:
       - service: docker.service
     - unless: ls /etc/kubernetes/admin.conf
 
+# setup requisite to allow clean ordering
 /home/ubuntu/.kube/config/admin.conf:
   file.managed:
     - source: /etc/kubernetes/admin.conf
@@ -32,7 +33,9 @@ kubernetes-init:
     - group: ubuntu
     - mode: 644
 
-# /etc/kubernetes/admin.conf /home/ubuntu/.kube/config/
-# kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/a70459be0084506e4ec919aa1c114638878db11b/Documentation/kube-flannel.yml >> pod_network_setup.txt
+# - kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/a70459be0084506e4ec919aa1c114638878db11b/Documentation/kube-flannel.yml >> pod_network_setup.txt
+
+# kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/etcd.yaml
+# kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calico.yaml
 
 
