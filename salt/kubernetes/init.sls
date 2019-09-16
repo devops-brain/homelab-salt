@@ -3,6 +3,11 @@
 {% set hostname = salt['grains.get']('id') %}
 
 
+swapoff:
+  mount.unmounted:
+    - device: /swap.img
+    - persist: True
+
 kubernetes-repo-key:
   cmd.run:
     - name: "wget -O - https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -"
