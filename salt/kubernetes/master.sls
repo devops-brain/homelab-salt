@@ -12,7 +12,7 @@ master-packages:
 
 user-kube-dir:
   file.directory:
-    - name: /home/ubuntu/.kube
+    - name: /home/ubuntu/.kube/config
     - makedirs: True
     - user: ubuntu
     - group: ubuntu
