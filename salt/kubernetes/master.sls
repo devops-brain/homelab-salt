@@ -18,16 +18,19 @@ user-kube-dir:
     - group: ubuntu
     - mode: 755
 
-
-
 kubernetes-init:
   cmd.run:
     - name: "kubeadm init --pod-network-cidr=10.0.0.0/10 >> /etc/kubernetes/cluster_initialized.txt"
     - require:
       - service: docker.service
-    - unless: ls /etc/kubernetes/cluster_initialized.txt
+    - unless: ls /etc/kubernetes/admin.conf
 
-
+/home/ubuntu/.kube/config/admin.conf:
+  file.managed:
+    - source: /etc/kubernetes/admin.conf
+    - user: ubuntu
+    - group: ubuntu
+    - mode: 644
 
 # /etc/kubernetes/admin.conf /home/ubuntu/.kube/config/
 # kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/a70459be0084506e4ec919aa1c114638878db11b/Documentation/kube-flannel.yml >> pod_network_setup.txt
