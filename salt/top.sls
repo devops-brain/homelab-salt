@@ -16,11 +16,11 @@ base:
 #    - desktop
   'bad-wol*':
     - docker
-#    - docker.jenkins
-#    - docker.jnlp
-#    - docker.plex
-#    - docker.ddns
-#    - docker.samba
+    - docker.jenkins
+    - docker.jnlp
+    - docker.plex
+    - docker.ddns
+    - docker.samba
     - nfs.server
   'real-beagle':
     - nfs.server
