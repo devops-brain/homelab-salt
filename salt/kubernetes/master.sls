@@ -38,4 +38,16 @@ kubernetes-init:
 # kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/etcd.yaml
 # kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calico.yaml
 
+calico-etcd:
+  cmd.run:
+    - name: "kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/etcd.yaml >> /etc/kubernetes/cluster_initialized.txt"
+    - onchanges:
+      - cmd: kubernetes-init
+
+calico-calico:
+  cmd.run:
+    - name: "kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calico.yaml >> /etc/kubernetes/cluster_initialized.txt"
+    - onchanges:
+      - cmd: calico-etcd
+
 
