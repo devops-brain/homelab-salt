@@ -23,12 +23,12 @@ plex:
     - binds:
       - /var/lib/plexdb:/config:rw
       - /tmp/plex:/transcode:rw
-      - /mnt/real-beagle/nfs/masters_DVR:/srv/masters_DVR:ro
-      - /mnt/real-beagle/nfs/masters_Koi-Pond:/srv/masters_Koi-Pond:ro
-      - /mnt/real-beagle/nfs/masters_Rose-Garden:/srv/masters_Rose-Garden:ro
-      - /mnt/real-beagle/nfs/masters_Dragons-Den:/srv/masters_Dragons-Den:ro
-      - /mnt/real-beagle/nfs/masters_Donna-Collection:/srv/masters_Donna-Collection:ro
-      - /mnt/real-beagle/nfs/masters_Roger-Roger:/srv/masters_Roger-Roger:ro
+      - /mnt/steady-coral/nfs/masters_DVR:/srv/masters_DVR:ro
+      - /mnt/steady-coral/nfs/masters_Koi-Pond:/srv/masters_Koi-Pond:ro
+      - /mnt/steady-coral/nfs/masters_Rose-Garden:/srv/masters_Rose-Garden:ro
+      - /mnt/steady-coral/nfs/masters_Dragons-Den:/srv/masters_Dragons-Den:ro
+      - /mnt/steady-coral/nfs/masters_Donna-Collection:/srv/masters_Donna-Collection:ro
+      - /mnt/steady-coral/nfs/masters_Roger-Roger:/srv/masters_Roger-Roger:ro
       - /srv/plexmedia_symlinks:/srv/plexmedia_symlinks:rw
       - /srv/plexmedia_pictures:/srv/plexmedia_pictures:rw
       - /srv/plex-backups:/data/backups:rw
