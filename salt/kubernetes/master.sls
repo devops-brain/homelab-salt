@@ -33,21 +33,17 @@ kubernetes-init:
     - group: ubuntu
     - mode: 644
 
-# - kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/a70459be0084506e4ec919aa1c114638878db11b/Documentation/kube-flannel.yml >> pod_network_setup.txt
-
-# kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/etcd.yaml
-# kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calico.yaml
-
 calico-etcd:
   cmd.run:
-    - name: "kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/etcd.yaml >> /etc/kubernetes/cluster_initialized.txt"
+    - name: "kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/etcd.yaml > /etc/kubernetes/calico_initialized.txt"
     - onchanges:
       - cmd: kubernetes-init
 
 calico-calico:
   cmd.run:
-    - name: "kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calico.yaml >> /etc/kubernetes/cluster_initialized.txt"
+    - name: "kubectl apply -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calico.yaml >> /etc/kubernetes/calico_initialized.txt"
     - onchanges:
       - cmd: calico-etcd
 
-
+# https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-18-04
+# https://medium.com/better-programming/build-your-own-multi-node-kubernetes-cluster-with-monitoring-346a7e2ef6e2
