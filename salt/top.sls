@@ -28,6 +28,9 @@ base:
     - docker.ddns
     - docker.samba
     - nfs.server
+    - desktop
+    - desktop.xrdp
+    - desktop.development
   'real-beagle':
     - nfs.server
   'steady-coral':
