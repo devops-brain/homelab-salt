@@ -3,10 +3,9 @@
 {% set hostname = salt['grains.get']('id') %}
 
 
-desktop-packages:
+xrdp-packages:
   pkg.installed:
     - pkgs:
-      - ubuntu-desktop
-      - unattended-upgrades
-      - snapd
+      - xrdp
+      - gnome-tweak-tool
 

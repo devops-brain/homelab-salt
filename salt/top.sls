@@ -10,6 +10,12 @@ base:
 #    - gluster.client
 #    - docker
 #    - docker.jnlp
+  'bn-bkhoyi-dev':
+    - saltstack.master
+#    - saltstack.jenkins-client
+    - desktop
+    - desktop.xrdp
+    - desktop.development
 #  'nuc5cpyh-01':
 #    - desktop
 #  'Zotac-mini-01':
