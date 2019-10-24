@@ -1,4 +1,4 @@
-#!jinja|yaml|gpg
+#!jinja|gpg|yaml
 
 {% set hostname = salt['grains.get']('id') %}
 
