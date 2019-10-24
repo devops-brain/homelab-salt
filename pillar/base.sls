@@ -47,21 +47,7 @@ jumpcloud:
 
 salt:
   minion:
-    master: |
-      -----BEGIN PGP MESSAGE-----
-
-      hQGMAygOx8UbPFfvAQv/bEfdKe35GSBj5JvTGTbTsQCg2+sc5wFn02+CGXLLNkNb
-      qa1L0+CRBuylElTwmtVj8cI+uZxFfZ03LwEiQq+wptoOrs5VMz9SV4yo2QybTMIf
-      +l9bFZS3CDFPDUT2mVnepPaSPEX3RnDglt2l3sTZk8XTmdVob0DaBSCG+STXkff5
-      rFbwRNa4UXIJjxrIZjfA0NGJqCZFSzyQ+vRtDwYA71odGtaB2tl8jpM/rN+SeSfe
-      f85VlziGzuoQf4eW0y75spQFtbADqwLzplQrY0wefnS6173/0nXJikT9nYxFhoNa
-      CPnvKwQ1I85rBafF6olpRKo/d2eEtHWjr+nKe66+dXsDP7/joTt85sbBPaV12nFX
-      DzSjiqj8/dTcg+xWV+trDlgHJl4DW8eCE5zr6gn2STCzT6wfchnLJpmQAXmfZ087
-      KmiyK9e7EjohUIYJRTER7uWhriJbW1Ak5eN8lo88/u7m7wiNpO2lDeYOqjDTWFcz
-      29u5g9/ywK6CEwlgMl/50kgBmQrdRCDbK3nvOqbhKzAh+lGxZtkHhDvBICw0cz6M
-      3QcP0Ujdnitq3oP+7LCrF0c1x7wadK7k/b4M0+b1kxyU+XONtW9cohc=
-      =arjF
-      -----END PGP MESSAGE-----
+    master: 'bn-bkhoyi-dev'
 
 jenkins:
   master_url: 'http://192.168.7.14:8080'
