@@ -35,5 +35,6 @@ base:
     - nfs.server
   'steady-coral':
     - nfs.server
+    - nfs.btrfs
     - kubernetes
     - kubernetes.master
