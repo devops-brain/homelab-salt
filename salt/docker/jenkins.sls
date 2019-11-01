@@ -2,14 +2,6 @@
 
 
 
-/mnt/glusterfs/jenkins-perms:
-  file.directory:
-    - name: /mnt/glusterfs/jenkins
-    - makedirs: True
-    - user: 1000
-    - group: 1000
-    - mode: 755
-
 /var/jenkins_master-perms:
   file.directory:
     - name: /var/jenkins_master
