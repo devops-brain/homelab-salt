@@ -7,15 +7,15 @@
   file.directory:
     - name: /srv/plexmedia_symlinks
     - makedirs: True
-    - user: 10000
-    - group: 10000
+    - user: 1000
+    - group: 1000
     - mode: 755
 /srv/plexmedia_pictures-perms:
   file.directory:
     - name: /srv/plexmedia_pictures
     - makedirs: True
-    - user: 10000
-    - group: 10000
+    - user: 1000
+    - group: 1000
     - mode: 755
 
 plex:
