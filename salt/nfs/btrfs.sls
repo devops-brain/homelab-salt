@@ -56,7 +56,7 @@ btrfs-scrub:
     - user: root
     - minute: 3
     - hour: 1
-    - daymonth: 1
+    - daymonth: 15
 
 ## TODO:  snapshots
 

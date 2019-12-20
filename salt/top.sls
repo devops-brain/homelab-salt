@@ -13,6 +13,7 @@ base:
     - desktop
     - desktop.xrdp
     - desktop.development
+    - desktop.btrfs
   'bad-wol*':
     - docker
     - docker.plex
