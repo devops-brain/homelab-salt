@@ -3,6 +3,7 @@
 {% set hostname = salt['grains.get']('id') %}
 
 
+## make conditional to allow ubuntu or mac
 dev-packages:
   pkg.installed:
     - pkgs:
