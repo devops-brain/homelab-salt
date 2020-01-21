@@ -6,6 +6,7 @@
 unattended-upgrades:
   pkg:
     - installed
+
 /etc/apt/apt.conf.d/51unattended-upgrades_on:
   file.managed:
     - user: root
