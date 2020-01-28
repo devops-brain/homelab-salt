@@ -30,7 +30,7 @@ btrfs-tools:
     - persist: True
     - dump: 0
     - pass_num: 0
-    - opts: "compress-force=zstd,degraded"
+    - opts: "nocompress,degraded"
 
 /srv:
   mount.mounted:
@@ -40,7 +40,7 @@ btrfs-tools:
     - persist: True
     - dump: 0
     - pass_num: 0
-    - opts: "compress-force=zstd,subvol=@srv"
+    - opts: "nocompress,subvol=@srv"
 
 btrfs-balance:
   cron.present:
