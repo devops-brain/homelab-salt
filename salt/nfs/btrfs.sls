@@ -24,7 +24,7 @@ btrfs-tools:
 # mounting the array and subvolumes
 /mnt/btrfs:
   mount.mounted:
-    - device: /dev/sdb
+    - device: /dev/sdc
     - fstype: btrfs
     - mkmnt: True
     - persist: True
@@ -34,7 +34,7 @@ btrfs-tools:
 
 /srv:
   mount.mounted:
-    - device: /dev/sdb
+    - device: /dev/sdc
     - fstype: btrfs
     - mkmnt: True
     - persist: True
