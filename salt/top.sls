@@ -30,3 +30,4 @@ base:
     - docker.plex
     - docker.ddns
     - docker.samba
+    - docker.folding-at-home
