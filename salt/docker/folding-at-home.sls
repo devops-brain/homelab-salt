@@ -3,15 +3,22 @@
 {% set hostname = salt['grains.get']('id') %}
 
 
+/srv/fah_config:
+  file.directory:
+    - name: /srv/fah_config
+    - makedirs: True
+    - user: 1000
+    - group: 1000
+    - mode: 755
+
 fah:
   docker_container.running:
     - binds:
-      - /srv/nfs/masters_DVR:/srv/masters_DVR:ro
-      - /srv/plexmedia_symlinks:/srv/plexmedia_symlinks:rw
+      - /srv/fah_config:/etc/fahclient:rw
     - image: 'johnktims/folding-at-home:latest'
     - detach: True
-    #- entrypoint: "FAHClient --web-allow=0/0:7396 --allow=0/0:7396"
-    - entrypoint: "FAHClient"
+    - entrypoint: "FAHClient --web-allow=0/0:7396 --allow=0/0:7396"
+    #- entrypoint: "FAHClient"
     - cmd:
       - '--user=devops-brain'
       - "--team=234679"
