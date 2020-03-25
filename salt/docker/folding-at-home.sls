@@ -17,14 +17,14 @@ fah:
       - /srv/fah_config:/etc/fahclient:rw
     - image: 'johnktims/folding-at-home:latest'
     - detach: True
+    - network_mode: "host"
     - entrypoint: "FAHClient --web-allow=192.168.7.0/24 --allow=192.168.7.0/24"
     #- entrypoint: "FAHClient"
-    - cmd:
-      - '--user=devops-brain'
-      - "--team=234679"
-      - "--gpu=false"
-      - "--smp=true"
-      - "--power=full"
-    - network_mode: "host"
+    #- cmd:
+    #  - '--user=devops-brain'
+    #  - "--team=234679"
+    #  - "--gpu=false"
+    #  - "--smp=true"
+    #  - "--power=full"
 
 
