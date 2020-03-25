@@ -9,7 +9,7 @@
     - makedirs: True
     - user: 1000
     - group: 1000
-    - mode: 755
+    - mode: 777
 
 fah:
   docker_container.running:
@@ -17,7 +17,7 @@ fah:
       - /srv/fah_config:/etc/fahclient:rw
     - image: 'johnktims/folding-at-home:latest'
     - detach: True
-    - entrypoint: "FAHClient --web-allow=0/0:7396 --allow=0/0:7396"
+    - entrypoint: "FAHClient --web-allow=192.168.7.0/24 --allow=192.168.7.0/24"
     #- entrypoint: "FAHClient"
     - cmd:
       - '--user=devops-brain'
