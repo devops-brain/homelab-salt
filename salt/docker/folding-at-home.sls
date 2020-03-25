@@ -24,6 +24,6 @@ fah:
       - "--passkey=bf452005d6804cbdbf452005d6804cbd"
       - "--gpu=false"
       - "--smp=true"
-      - "--power=full"
+      - "--power=medium"
 
 
