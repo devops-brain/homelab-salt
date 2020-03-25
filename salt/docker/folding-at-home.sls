@@ -3,14 +3,6 @@
 {% set hostname = salt['grains.get']('id') %}
 
 
-/srv/fah_config:
-  file.directory:
-    - name: /srv/fah_config
-    - makedirs: True
-    - user: 1000
-    - group: 1000
-    - mode: 777
-
 fah:
   docker_container.running:
     - image: 'johnktims/folding-at-home:latest'
