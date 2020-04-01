@@ -13,7 +13,7 @@
 
 fah:
   docker_container.running:
-    - image: 'johnktims/folding-at-home:latest'
+    - image: 'linuxserver/foldingathome:latest'
     - binds:
       - /srv/fah_config:/config:rw
     - detach: True
@@ -21,15 +21,5 @@ fah:
     - environment:
       - PUIDE=1000
       - PGIDE=1000
-
-#    - entrypoint: "FAHClient --web-allow='127.0.0.1 192.168.7.0/24' --allow='127.0.0.1 192.168.7.0/24'"
-    #- entrypoint: "FAHClient"
-#    - cmd:
-#      - '--user=devops-brain'
-#      - "--team=234679"
-#      - "--passkey=bf452005d6804cbdbf452005d6804cbd"
-#      - "--gpu=false"
-#      - "--smp=true"
-#      - "--power=medium"
 
 
