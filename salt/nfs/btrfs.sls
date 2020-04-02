@@ -30,7 +30,7 @@ btrfs-tools:
     - persist: True
     - dump: 0
     - pass_num: 0
-    - opts: "compress=no,degraded"
+    - opts: "compress=no,nossd,degraded"
 
 /srv:
   mount.mounted:
@@ -40,22 +40,30 @@ btrfs-tools:
     - persist: True
     - dump: 0
     - pass_num: 0
-    - opts: "compress=no,subvol=@srv"
+    - opts: "compress=no,nossd,subvol=@srv"
 
+# tuned Ferroin's balance to better fit my needs:  better compaction and more aggressive use of idle window
+# https://github.com/netdata/netdata/issues/3203
 btrfs-balance:
   cron.present:
-    - name: btrfs balance start /mnt/btrfs
+    - name: flock -x /tmp/btrfs.lck btrfs balance start -dusage=80 -dlimit=50 -musage=80 -mlimit=50 /mnt/btrfs
     - user: root
     - minute: 3
-    - hour: 1
-    - daymonth: 1
+    - hour: 5
+
+btrfs-raid-convert:
+  cron.present:
+    - name: flock -x /tmp/btrfs.lck btrfs balance start -dsoft -msoft -mconvert=raid10 -mlimit=50 -dconvert=raid0 -dlimit=50 /mnt/btrfs
+    - user: root
+    - minute: 18
+    - hour: 5
 
 btrfs-scrub:
   cron.present:
-    - name: btrfs scrub start /mnt/btrfs
+    - name: flock -x /tmp/btrfs.lck btrfs scrub start /mnt/btrfs
     - user: root
     - minute: 3
-    - hour: 1
+    - hour: 6
     - daymonth: 15
 
 ## TODO:  snapshots
