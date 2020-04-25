@@ -18,6 +18,7 @@ fah:
       - /srv/fah_config:/config:rw
     - detach: True
     - network_mode: "host"
+    -gpus: "all"
     - environment:
       - PUIDE=1000
       - PGIDE=1000
