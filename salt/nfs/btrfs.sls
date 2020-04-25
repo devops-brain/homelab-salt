@@ -44,16 +44,23 @@ btrfs-tools:
 
 # tuned Ferroin's balance to better fit my needs:  better compaction and more aggressive use of idle window
 # https://github.com/netdata/netdata/issues/3203
-btrfs-balance:
+btrfs-balance-bulk:
   cron.present:
-    - name: flock -x /tmp/btrfs.lck btrfs balance start -dusage=80 -dlimit=50 -musage=80 -mlimit=50 /mnt/btrfs
+    - name: flock -x /tmp/btrfs.lck btrfs balance start -dusage=50 -dlimit=50 -musage=50 -mlimit=50 /mnt/btrfs
     - user: root
     - minute: 3
     - hour: 5
 
+btrfs-balance-optimal:
+  cron.present:
+    - name: flock -x /tmp/btrfs.lck btrfs balance start -dusage=95 -dlimit=5 -musage=95 -mlimit=5 /mnt/btrfs
+    - user: root
+    - minute: 8
+    - hour: 5
+
 btrfs-raid-convert:
   cron.present:
-    - name: flock -x /tmp/btrfs.lck btrfs balance start -dsoft -msoft -mconvert=raid10 -mlimit=50 -dconvert=raid0 -dlimit=50 /mnt/btrfs
+    - name: flock -x /tmp/btrfs.lck btrfs balance start -dsoft -msoft -mconvert=raid10 -mlimit=100 -dconvert=raid5 -dlimit=50 /mnt/btrfs
     - user: root
     - minute: 18
     - hour: 5
