@@ -17,7 +17,7 @@ base:
     - docker.ddns
     - docker.samba
     - docker.folding-at-home
-  'cuddly-kitten':
+  'E3PO':
     - docker
     - docker.folding-at-home
   'ideal-mouse':
