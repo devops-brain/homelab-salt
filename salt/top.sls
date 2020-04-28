@@ -17,9 +17,8 @@ base:
     - docker.ddns
     - docker.samba
     - docker.folding-at-home
-  'E3PO':
-    - docker
-    - docker.folding-at-home
+  'new-earwig':
+    - nfs.btrfs
   'ideal-mouse':
     - docker
     - docker.folding-at-home
