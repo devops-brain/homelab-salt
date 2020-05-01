@@ -19,6 +19,8 @@ base:
     - docker.folding-at-home
   'new-earwig':
     - nfs.btrfs
+    - docker
+    - docker.folding-at-home
   'ideal-mouse':
     - docker
     - docker.folding-at-home
