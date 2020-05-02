@@ -17,7 +17,7 @@ base:
     - docker.ddns
     - docker.samba
     - docker.folding-at-home
-  'new-earwig':
+  'fast-stag':
     - nfs.btrfs
     - docker
     - docker.folding-at-home
