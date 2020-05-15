@@ -17,10 +17,9 @@ base:
     - docker.ddns
     - docker.samba
     - docker.folding-at-home
+  'wired-clam':
+    - nfs.btrfs
   'fast-stag':
     - nfs.btrfs
-    - docker
-    - docker.folding-at-home
-  'ideal-mouse':
     - docker
     - docker.folding-at-home
