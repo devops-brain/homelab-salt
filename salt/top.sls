@@ -16,7 +16,6 @@ base:
     - docker.plex
     - docker.ddns
     - docker.samba
-    - docker.folding-at-home
   'wired-clam':
     - nfs.btrfs
   'fast-stag':
