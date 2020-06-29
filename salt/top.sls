@@ -19,7 +19,3 @@ base:
     - docker.plex
     - docker.ddns
     - docker.samba
-  'wired-clam':
-    - nfs.btrfs
-  'fast-stag':
-    - nfs.btrfs
