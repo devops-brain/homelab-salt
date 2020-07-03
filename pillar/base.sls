@@ -50,7 +50,7 @@ salt:
     master: 'salt'
 
 jenkins:
-  master_url: 'http://192.168.7.22:8080'
+  master_url: 'http://ideal-mouse.khoyi.io:8080'
 
 samba:
   password: |
@@ -70,4 +70,4 @@ samba:
     -----END PGP MESSAGE-----
 
 nfs:
-  server: 'steady-coral'
+  server: 'ideal-mouse.khoyi.io'
