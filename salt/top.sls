@@ -19,6 +19,15 @@ base:
     - docker.plex
     - docker.ddns
     - docker.samba
+  'ideal-mouse':
+    - nfs.server
+    - nfs.btrfs
+    - docker
+    - docker.jenkins
+    - docker.jnlp
+    - docker.plex
+    - docker.ddns
+    - docker.samba
   'wired-clam':
     - nfs.btrfs
   'fast-stag':
