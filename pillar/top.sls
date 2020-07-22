@@ -1,8 +1,8 @@
 base:
   '*':
     - base
-  'nuc5ppyh-01':
+  'salt':
     - nuc5ppyh-01
-  'steady-coral':
+  'ideal-mouse':
     - steady-coral
 
