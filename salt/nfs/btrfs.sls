@@ -60,7 +60,7 @@ btrfs-balance-optimal:
 
 btrfs-raid-convert:
   cron.present:
-    - name: flock -x /tmp/btrfs.lck btrfs balance start -dsoft -msoft -mconvert=raid1 -dconvert=single /mnt/btrfs
+    - name: flock -x /tmp/btrfs.lck btrfs balance start -dsoft -msoft -mconvert=raid1 -dconvert=raid1 /mnt/btrfs
     - user: root
     - minute: 18
     - hour: 5
