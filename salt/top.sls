@@ -9,7 +9,6 @@ base:
     - saltstack.jenkins-client
   'salt':
     - saltstack.master
-    - saltstack.jenkins-client
   'steady-coral':
     - nfs.server
     - nfs.btrfs
