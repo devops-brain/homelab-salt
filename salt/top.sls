@@ -9,15 +9,6 @@ base:
     - saltstack.jenkins-client
   'salt':
     - saltstack.master
-  'steady-coral':
-    - nfs.server
-    - nfs.btrfs
-    - docker
-    - docker.jenkins
-    - docker.jnlp
-    - docker.plex
-    - docker.ddns
-    - docker.samba
   'ideal-mouse':
     - nfs.server
     - nfs.btrfs
