@@ -50,7 +50,7 @@ salt:
     master: 'salt'
 
 jenkins:
-  master_url: 'http://192.168.78.4:8080/'
+  master_url: 'http://192.168.78.4:8080'
 
 samba:
   password: |
