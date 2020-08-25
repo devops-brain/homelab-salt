@@ -3,7 +3,6 @@ base:
     - saltstack
     - jumpcloud
     - common
-    - nfs
   'nuc5ppyh-01':
     - saltstack.master
     - saltstack.jenkins-client
