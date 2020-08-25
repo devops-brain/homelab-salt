@@ -2,7 +2,7 @@ base:
   '*':
     - base
   'salt':
-    - nuc5ppyh-01
+    - saltmaster
   'ideal-mouse':
-    - steady-coral
+    - ideal-mouse
 
