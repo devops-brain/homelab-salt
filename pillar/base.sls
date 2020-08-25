@@ -55,18 +55,18 @@ jenkins:
 samba:
   password: |
     -----BEGIN PGP MESSAGE-----
-
-    hQGMAygOx8UbPFfvAQv/efa5yH3qZsxrNvS5rj9zPHssnQJq3qgVsTBCWmjhU9nt
-    Cw5xCUGSH/40s7ngs7vobHQw/M1vcjJKJOXYzaopCeNOQi2bkS5BfUnCp0emgawp
-    zA961okQVOS0wXdTAXi2G30l+Kerr6Owsy7tnInJm3DKbQtdBxo8H+50rLnrMS1o
-    FYSWVAbF3FiRW0w6z9cWACm9WawI6mPbRo6mcR4MUiRuU1WH6kbP2/Lku9PG6jG5
-    zEmLj+OPUOMf4xuvNPOfjzd7oFnmMnXGW4MPRgdOTjmiWEcTG8fyEgA050eleEup
-    +sI3IIgpE31e97gwm11pvhKiIplFaEmAt3o/rqFjjBvAxfDglOP9G7WqnIfWfDGY
-    hswsbSBCONXZPBYvi9h1jLU5+Cs2pSaNFef35LlhU5+DeT3BjkMLh3ssAlbkMrtS
-    F5WgHwW2tmHpbUhuWJ5U0xnzRHB0LmZXJdvQPpwcZwj9TZpnopMTCnKki7f1PZrt
-    criP6zPXI+rbK9dAJWWN0kgB7Gr0+e7w3lRoi/EyxgcVm5MC+4q9Y8RDj9Po0fyR
-    32N49enB/zhCVqHOYHSyvrQr2whsr3g03cicmg8za0RDAJljrAU7Ft8=
-    =ywcb
+    
+    hQGMA2p9EgXH9hJQAQv/Vm/OJy5SN5+ILX/6KW1Vtn2+L+kX4PK1Eku1oCsrejMz
+    VhILhhjT59HI1FQmZnr2EU2iHrTJ2jR0iCmYrE1BrZkv8puVGfGkoetABLQ+BtDD
+    VEYbpT9T+xK7E97ieibImkjBXYFrQsEXCme9Ul4TkMF4M1nuy7oV9ce8podUtfUQ
+    /pzyXQ9T1Jtv9J/OsMY2ZcqWqm68qAx194HYUWbsrsEzWVb/4oTOEDmCAtnPGbDL
+    onH2AI659qs3lblsZEMc2kcmega5D6jkudJw87iNPQliJogy66UJN7m5m/FUBMx5
+    fqqpVuqGQmfyY8eQAoyk3xLiK61jLwMbByNrXi51dDP7T8gcavHxhDRS/S/Og5YX
+    ul3QwsQmSQT1PneUms/sIDhMzXyn+Je2fZkzE32tfT1iMvTQrgxVqjToii0bCMHS
+    GaoFxZY4jb+ptrxf9fChVMvcHtSKj7iHgOYSTmuTfydHDAhljakocS23Dbszt6on
+    yiRId3QB/3WfzVGTITGi0kgBCO7neCN/H0RunIK+qHQG6LeH5dG0oJA0OfoyeGAw
+    IuMe+zmhwaXI038Y/RX0gqslq+LImUqE6S9EvUeEeRuNQ9yFcDIRrNI=
+    =+sfx
     -----END PGP MESSAGE-----
 
 nfs:
