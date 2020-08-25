@@ -30,6 +30,7 @@ jenkins-agent.service:
     - name: /etc/systemd/system/jenkins-agent.service
     - user: root
     - group: root
+    - mode: '0755'
     - contents: |
         [Unit]
         Description=jenkins-agent
