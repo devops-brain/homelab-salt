@@ -13,7 +13,7 @@ pipeline {
     stage('Push code to saltmaster'){
       steps {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-        sh "salt 'nuc5ppyh-01' state.highstate"
+        sh "salt 'salt' state.highstate"
       }
     }
     stage('Push code via highstate'){
