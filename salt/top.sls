@@ -9,6 +9,7 @@ base:
     - saltstack.jenkins-client
   'salt':
     - saltstack.master
+    - saltstack.jenkins-client
   'ideal-mouse':
     - nfs.server
     - nfs.btrfs
