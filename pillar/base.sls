@@ -30,19 +30,19 @@ gluster:
 jumpcloud:
   xConnectKey: |
     -----BEGIN PGP MESSAGE-----
-
-    hQGMAygOx8UbPFfvAQwAyD3d5ot9OjIg3f/SFep+9a1tuuUM7UZ5M9Hi/3/Jq+uM
-    u1R5sVtEv+fwQ+rNATA3LUlwY5ceWjJ4cu0dTZ5fY3MJiwyP2EL4tsVj16HgGACX
-    IlLty1P4yRY1Hxp8UXksE+9cUlpS4b8pF+ntwldZAV/yokDeH5rdqV9DE09wwGiT
-    0XWES8VlKPQ6UgD5yFsFFF/fkeLVfXDsPgBihRCTdP1/LlOqRu8NNl/nIfNj4n07
-    vJCr0bho3D9b2JR0sx/Yk2T+wLLVZuizJdzz5wuQSxoZo8Z4eEMhNaSUk/j3d0Pa
-    wQ/m7kbbcJzmvKO5tw9t+JRLOJIPeLqWHKqBKzD20Luf+BMeFUytuKTK/bL5RWai
-    SlP5FlHRzX9lVMebPdF4AywJOC8q3NizqISwBiyK7GO69iHVLfUlOex+NPJhschb
-    ANhnXK7RCJSrYNzxhFu92tWCCwg/AvhF6+EjkclRpsSvyFySHcOd8E8x2QLRBqas
-    t4Is7ZYFgT3N8nS6DHOq0mMB5U/u8HTIX2YhvzjEMpNAHWhGznsHvuHyiaze3aoG
-    2/o0IxRmMJW1FyZ0S1PYMZEZwWP8phi67HbEtaNNv6qwmvfyW9SfuSH28FlSPfam
-    bPUikp3lTyHtNWDvYt7LVD3v+WY=
-    =TJ+x
+    
+    hQGMA2p9EgXH9hJQAQv+OAsR32r4NAl8bPxWi7ZDz7KMgjYxn0Edqwf6+YnlGypq
+    3PsoaPB/FR7sET3E9qHaxbhQvyoGv/ajiiMs9A6ILq/jJh84WrvjDaUmInjghxg9
+    yKgfIGg7YaSdPsXD8bBosFnWZCffk/6ljbkcRKTF4okXEtC7uSk/FQhUSp/5Jl8w
+    CUk0gYfKh6BXyLH/KnN4PDf1hoW5gk+jTTXG04oP+oFuXMHzp31SUXamKFIwYryx
+    x/xPyyIQt+lMIgn1UORhh3YDmrQCNfqnKIwQWI71sHZykAuSIwq5pOI4lP3jq7+z
+    qaev2tppUHtG6qbw7l55ZxUVSRccq7RwNlZpMWUvawOvvNlnXHue9OzunPiKnJOD
+    kEyN4ld6uL4o6ZpmCV9WQRJA5RoqxTekhamsiaLJJrJ1WpmWgjcILBbTQpOif8pY
+    LP1261rKC6uHt8doS7khYGVUHsvERRp953qbT1NH2SQLGMd/PJqdk06lAN4f7PYz
+    lOiGPmxAgXFMX2kI6uzx0mMBCKYuVCzyPiD01itnhhAh0n7sy5j/kW12lzDiHgB5
+    H6b9D3afr2gThFHUMBcfeHDBN1uftndkgFfmR6+oMNqurChovfDaOxPiPP0tyJp1
+    aKJDnLwC3nDx7UOAQe/SyOMj8+Q=
+    =b1DG
     -----END PGP MESSAGE-----
 
 salt:
