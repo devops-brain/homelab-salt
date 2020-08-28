@@ -32,7 +32,7 @@ plex:
       - /srv/plexmedia_symlinks:/srv/plexmedia_symlinks:rw
       - /srv/plexmedia_pictures:/srv/plexmedia_pictures:rw
       - /srv/plex-backups:/data/backups:rw
-    - image: plexinc/pms-docker:latest
+    - image: plexinc/pms-docker:plexpass
     - detach: True
     - network_mode: "host"
 
