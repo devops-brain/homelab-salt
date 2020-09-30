@@ -19,14 +19,14 @@ salt-minion:
 
 saltstack-repo-key:
   cmd.run:
-    - name: "wget -O - https://repo.saltstack.com/py3/ubuntu/18.04/amd64/2019.2/SALTSTACK-GPG-KEY.pub | apt-key add -"
+    - name: "wget -O - https://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -"
 
 /etc/apt/sources.list.d/saltstack.list:
   file.managed:
     - create: True
     - makedirs: True
     - contents: |
-        deb http://repo.saltstack.com/py3/ubuntu/18.04/amd64/2019.2 bionic main
+        deb http://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest focal main
 {%- endif %}
 
 
