@@ -15,3 +15,9 @@ gpg-dependency-packages:
     - pkgs:
       - python3-gnupg
       - rng-tools
+
+## TODO:  split this to its own role
+maas-packages:
+  pkg.installed:
+    - pkgs:
+      - jq
