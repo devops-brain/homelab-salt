@@ -6,6 +6,9 @@ base:
   'salt':
     - saltstack.master
     - saltstack.jenkins-client
+  'fast-stag':
+    - nfs.server
+    - nfs.btrfs
   'ideal-mouse':
     - nfs.server
     - nfs.btrfs
