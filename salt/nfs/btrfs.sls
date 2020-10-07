@@ -1,10 +1,9 @@
-parted:
-  pkg:
-    - installed
 
-btrfs-tools:
-  pkg:
-    - installed
+btrfs-dependency-packages:
+  pkg.installed:
+    - pkgs:
+      - btrfs-progs
+      - parted
 
 # array manually created, salt doesn't manage as it needs to be persistent
 ## Disabled as it is just too dangerous and not critical at my current scale.
