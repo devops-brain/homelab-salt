@@ -20,3 +20,5 @@ base:
     - docker.plex
     - docker.ddns
     - docker.samba
+  'odroid-hc2*':
+    - ceph
