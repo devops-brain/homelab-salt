@@ -7,6 +7,5 @@ ceph-osd-packages:
   pkg.installed:
     - pkgs:
       - ceph-common
-      - ceph-osd
 
 
