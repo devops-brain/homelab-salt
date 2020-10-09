@@ -5,4 +5,6 @@ base:
     - saltmaster
   'ideal-mouse':
     - ideal-mouse
+  'odroid-hc2*':
+    - ceph
 
