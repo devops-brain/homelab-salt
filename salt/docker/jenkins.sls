@@ -17,6 +17,7 @@ jenkins:
     - image: 'khoyi/jenkins:latest'
     - detach: True
     - network_mode: "host"
+    - client_timeout: 300
 
 
 
