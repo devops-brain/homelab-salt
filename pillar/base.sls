@@ -8,24 +8,17 @@
 # This is a bootstrap shortcut that is only safe in a one user env...   do NOT copy this approach on production setups!
 gluster:
   hosts:
-    {% for instance in range(12) %}
-    - odroid-hc2-{{ '%02d' % (instance+1) }}.khoyi.us
+    {% for instance in range(5) %}
+    - odroid-hc2-{{ '%02d' % (instance+1) }}.khoyi.io
     {% endfor %}
   volumes_redundancy:
-    - 'jenkins'
-    - 'salt-conf'
     - 'legacy'
-    - 'google-domains-ddns'
-    - 'duplicati'
     - 'masters_DVR'
     - 'masters_Koi-Pond'
     - 'masters_Rose-Garden'
     - 'masters_Dragons-Den'
     - 'masters_Donna-Collection'
     - 'masters_Roger-Roger'
-    - 'plex-backups'
-    - 'plexmedia_symlinks'
-    - 'plexmedia_pictures'
 
 jumpcloud:
   xConnectKey: |
