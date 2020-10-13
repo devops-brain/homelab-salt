@@ -21,5 +21,5 @@ base:
     - docker.ddns
     - docker.samba
   'odroid-hc2*':
-    - gluster
     - gluster.server
+#    - gluster
