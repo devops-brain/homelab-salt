@@ -4,6 +4,7 @@
 {% set glusterfs_host_list = salt['pillar.get']('gluster:hosts', ['odroid-hc2-01', 'odroid-hc2-02', 'odroid-hc2-03']) %}
 
 
+{% if hostname == glusterfs_host_list[0] %}
 /mnt/gluster_cow:
   mount.mounted:
     - device: /dev/sda
@@ -30,7 +31,6 @@ glusterfs-service:
       {% endfor %}
   {% endif %}
 
-{% if hostname == glusterfs_host_list[0] %}
 {% for volume in salt['pillar.get']('gluster:volumes_redundancy', ['jenkins', 'legacy']) %}
 gluster_volume_{{ volume }}:
   glusterfs.volume_present:
