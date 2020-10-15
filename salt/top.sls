@@ -14,11 +14,11 @@ base:
     - nfs.server
     - nfs.btrfs
     - docker
-#    - docker.jenkins
-#    - docker.jnlp
-#    - docker.plex
-#    - docker.ddns
-#    - docker.samba
+    - docker.jenkins
+    - docker.jnlp
+    - docker.plex
+    - docker.ddns
+    - docker.samba
   'odroid-hc2*':
     - gluster.server
 #    - gluster
