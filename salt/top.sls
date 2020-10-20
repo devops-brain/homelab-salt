@@ -19,6 +19,7 @@ base:
     - docker.plex
     - docker.ddns
     - docker.samba
+    - docker.netatalk
   'odroid-hc2*':
     - gluster.server
 #    - gluster
