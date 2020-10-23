@@ -10,7 +10,6 @@ base:
     - nfs
     - nfs.btrfs
   'ideal-mouse':
-    - nfs
     - nfs.server
     - nfs.btrfs
     - docker

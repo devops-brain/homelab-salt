@@ -4,8 +4,10 @@
 
 
 nfs-kernel-server:
-  pkg:
-    - installed
+  pkg.installed:
+    - pkgs:
+      - nfs-common
+      - nfs-kernel-server
 
 /srv/nfs:
   file.directory:
