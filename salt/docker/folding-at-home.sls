@@ -20,7 +20,7 @@ fah:
     - network_mode: "host"
     - gpus: "all"
     - environment:
-      - PUIDE=1000
-      - PGIDE=1000
+      - PUID=1000
+      - PGID=1000
 
 
