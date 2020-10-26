@@ -20,3 +20,6 @@ base:
   'odroid-hc2*':
     - gluster.server
 #    - gluster
+  'suited-macaw':
+    - docker
+    - docker.folding-at-home
