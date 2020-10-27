@@ -64,3 +64,24 @@ samba:
 
 nfs:
   server: 'ideal-mouse.khoyi.io'
+
+fah:
+  power: 'FULL'
+  team: '234679'
+  user: 'devops-brain'
+  passkey: |
+    -----BEGIN PGP MESSAGE-----
+
+    hQGMA2p9EgXH9hJQAQv/eGaU6/Nsi23Etzza53Lo3gR/ZOri8ffKBXPAGfLHp9bZ
+    LV4ITlLXel+2dL+3HJh6kr1S1N3MAJM25bEAgERcgBm1lKGEnLBg8Kmz9x2OH9Ye
+    SJCwh+JLF6JxnMPAr5KQaNKP/ERxjNwK385zE8LUapcmjJs8c1SVnT1vOSSTlZhh
+    GeX8oHFlgoaJrp3+0ROQh2o5rNA87gT7wQLaOZNKGku9vfXWrj8XVLEz3FJoHpVF
+    KkHplbXJMKslzk1+ZRc4wvdfyIGdfUNSf5dyfCdiB7XbGk8c0wAjCAHEcDuQmUS9
+    9xfPNfajLkwWA6mrgZalvOpqRd06wUr/q74Sk5LMePLV5QjlUdWAz3QUXGRusyX2
+    4bnELRLJFC49bNvSTA6C7uwDtEAG5pnwhxMV9gXQabhZU8QskZZJUOIxuUonATMQ
+    IidiphYjkKXBoP5/53ikhwwNWtVPw8Vi6mkHjRyPU/Z12wjIOOGd0ORUeJN6kkRL
+    /cYBeFRrxJLmL9NKjZch0k0B45xbicvOof7I01UlVNOylQ9RSrCmPEZGJY9WdxDX
+    Eu3wXJeZzogQR+/GXyVm3phN5XsLPYWC+b2tecfMbXpKqfA7K1ofwWsSNE2gTw==
+    =W13l
+    -----END PGP MESSAGE-----
+
