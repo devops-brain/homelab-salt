@@ -16,10 +16,10 @@ base:
     - docker.ddns
     - docker.samba
     - docker.netatalk
-#    - docker.folding-at-home
+    - docker.folding-at-home
   'odroid-hc2*':
     - gluster.server
 #    - gluster
   'suited-macaw':
     - docker
-#    - docker.folding-at-home
+    - docker.folding-at-home
