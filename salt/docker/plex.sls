@@ -29,7 +29,7 @@ plex:
       - /srv/nfs/masters_Dragons-Den:/srv/masters_Dragons-Den:ro
       - /srv/nfs/masters_Donna-Collection:/srv/masters_Donna-Collection:ro
       - /srv/nfs/masters_Roger-Roger:/srv/masters_Roger-Roger:ro
-      - /srv/plexmedia_symlinks:/srv/plexmedia_symlinks:rw
+      - /srv/plexmedia_symlinks:/media:rw
       - /srv/plexmedia_pictures:/srv/plexmedia_pictures:rw
       - /srv/plex-backups:/data/backups:rw
     - image: plexinc/pms-docker:plexpass
