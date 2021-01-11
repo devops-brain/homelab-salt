@@ -21,7 +21,7 @@ nfs-kernel-server:
 nfs-share:
   nfs_export.present:
     - name:     '/srv/nfs'
-    - hosts: '192.168.76.0/22'
+    - hosts: '*'
     - options:
       - 'rw'
       - 'sync'
